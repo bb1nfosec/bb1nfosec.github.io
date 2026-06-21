@@ -89,12 +89,42 @@ window.__PROFILE__ = Object.freeze({
     a.addEventListener('click', e=>{ const t=a.getAttribute('href'); if(t&&t.startsWith('#')){ e.preventDefault(); openLayer(t); history.replaceState(null,'',t); }});
   });
 
-  /* ════ REDACTION REVEAL ════ */
+  /* ════ SCROLL REVEAL ════ */
+  $$('.layer, .foot').forEach(el=>el.classList.add('reveal'));
+  if('IntersectionObserver' in window && !reduced){
+    const io=new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }});
+    },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+    $$('.reveal').forEach(el=>io.observe(el));
+  } else {
+    $$('.reveal').forEach(el=>el.classList.add('in'));
+  }
+
+  /* ════ REDACTION REVEAL — decrypt scramble (the signature interaction) ════ */
+  const GLYPHS='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef0123456789#$%&/<>*+=';
+  function decrypt(el, finalText, dur=600){
+    if(reduced){ el.textContent = finalText; return; }
+    const len=finalText.length, total=Math.max(8, Math.round(dur/28));
+    let frame=0;
+    const id=setInterval(()=>{
+      frame++;
+      const settled=Math.floor(len*frame/total);
+      let out='';
+      for(let i=0;i<len;i++){
+        out += (finalText[i]===' ') ? ' '
+             : (i<settled) ? finalText[i]
+             : GLYPHS[(Math.random()*GLYPHS.length)|0];
+      }
+      el.textContent=out;
+      if(frame>=total){ clearInterval(id); el.textContent=finalText; }
+    },28);
+  }
   $$('.redacted').forEach(r=>{
-    const reveal = ()=>{ r.textContent = r.dataset.reveal || r.textContent; r.classList.add('shown'); };
-    r.addEventListener('mouseenter', reveal);
-    r.addEventListener('focus', reveal);
-    r.addEventListener('click', reveal);
+    const text=r.dataset.reveal;
+    const fire=()=>{ if(r.classList.contains('shown')||!text) return; r.classList.add('shown'); decrypt(r,text); };
+    r.addEventListener('mouseenter',fire);
+    r.addEventListener('focus',fire);
+    r.addEventListener('click',fire);
   });
 
   /* ════ COMMAND PALETTE ════ */

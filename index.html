@@ -85,7 +85,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script>document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="/assets/css/styles.css" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230E1116'/><path d='M16 4l10 4v6c0 6-4.2 11.4-10 14C10.2 25.4 6 20 6 14V8z' fill='none' stroke='%232DD4BF' stroke-width='2'/><text x='16' y='20' font-size='9' fill='%232DD4BF' text-anchor='middle' font-family='monospace'>V</text></svg>" />
 </head>
@@ -136,7 +137,7 @@
       <span class="prompt">$</span> Red&nbsp;Team&nbsp;Specialist
       <span class="pipe">·</span> Offensive&nbsp;Security&nbsp;Engineer
       <span class="pipe">·</span> vCISO&nbsp;Advisor
-      <span class="pipe">·</span> ICS/SCADA&nbsp;Security
+      <span class="pipe">·</span> ICS/SCADA&nbsp;Security<span class="caret" aria-hidden="true"></span>
     </p>
     <p class="hero-blurb">
       Elite offensive security practitioner with <strong>12+ years</strong> spanning red team operations,
@@ -144,11 +145,12 @@
       across the Middle&nbsp;East, Europe and the United&nbsp;States. I translate offensive findings into
       <span class="redacted" tabindex="0" data-reveal="board-level business risk">[ classified ]</span>.
     </p>
-    <div class="hero-stats">
-      <div class="stat"><b>12+</b><span>years offensive</span></div>
-      <div class="stat"><b>50+</b><span>VAPT engagements</span></div>
-      <div class="stat"><b>Top&nbsp;10</b><span>HTB Hall of Fame</span></div>
-      <div class="stat"><b>&lt;0.1%</b><span>Omniscient rank</span></div>
+    <div class="readout mono" role="group" aria-label="Operator status readout">
+      <div class="ro-row"><span class="ro-k">uptime</span><span class="ro-v">12+ yrs offensive security</span></div>
+      <div class="ro-row"><span class="ro-k">engagements</span><span class="ro-v">50+ VAPT · 4 continents</span></div>
+      <div class="ro-row"><span class="ro-k">rank</span><span class="ro-v">HTB Omniscient · Top&nbsp;10 <span class="ro-dim">(&lt;0.1% globally)</span></span></div>
+      <div class="ro-row"><span class="ro-k">recognition</span><span class="ro-v">Bug Bounty HoF · Google · Twitter · Bugcrowd</span></div>
+      <div class="ro-row"><span class="ro-k">status</span><span class="ro-v ro-ok">● available · remote-global</span></div>
     </div>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#interface">Initiate contact →</a>
@@ -163,29 +165,60 @@
     <p class="section-label mono"><span class="muted">//</span> why_engage <span class="muted">— the short version</span></p>
     <div class="cards why-cards">
       <div class="card static why-card">
-        <div class="why-no mono">01</div>
+        <div class="why-tag mono"><span class="why-dim">proof</span><span class="why-chk">✓ verifiable</span></div>
         <div class="card-top">Proof, not promises</div>
         <p>HackTheBox <strong>Omniscient — Top 10</strong> globally (&lt;0.1% of users). Bug Bounty Hall of Fame at <strong>Google, Twitter, Bugcrowd</strong>. Every claim here is independently verifiable.</p>
       </div>
       <div class="card static why-card">
-        <div class="why-no mono">02</div>
-        <div class="card-top">A rare full-spectrum range</div>
-        <p>Attacker depth — red team, exploit dev, AD attack chains — <em>plus</em> <strong>ICS/SCADA (OT)</strong>, <strong>LLM/AI security</strong> and <strong>vCISO</strong> advisory. Few operators cover the wire <em>and</em> the boardroom.</p>
+        <div class="why-tag mono"><span class="why-dim">range</span><span class="why-chk">full-spectrum</span></div>
+        <div class="card-top">Wire to boardroom</div>
+        <p>Attacker depth — red team, exploit dev, AD attack chains — <em>plus</em> <strong>ICS/SCADA (OT)</strong>, <strong>LLM/AI security</strong> and <strong>vCISO</strong> advisory. Few operators cover both ends.</p>
       </div>
       <div class="card static why-card">
-        <div class="why-no mono">03</div>
+        <div class="why-tag mono"><span class="why-dim">clearance</span><span class="why-chk">12+ yrs</span></div>
         <div class="card-top">Trusted with the sensitive work</div>
-        <p><strong>12+ years</strong> across government-adjacent and critical-infrastructure engagements where discretion is the requirement, not a preference.</p>
+        <p>Government-adjacent and critical-infrastructure engagements where discretion is the requirement, not a preference. Sensitive scope stays sensitive.</p>
       </div>
       <div class="card static why-card">
-        <div class="why-no mono">04</div>
-        <div class="card-top">I ship, not just report</div>
-        <p>Open-source tooling with real traction (177★) and findings translated into <strong>CFO / board-level financial risk</strong> — outcomes, not a PDF that gathers dust.</p>
+        <div class="why-tag mono"><span class="why-dim">delivery</span><span class="why-chk">ships code</span></div>
+        <div class="card-top">Outcomes, not a PDF</div>
+        <p>Open-source tooling with real traction (177★) and findings translated into <strong>CFO / board-level financial risk</strong> — remediation that survives the readout.</p>
       </div>
     </div>
     <p class="why-line mono">
-      <span class="prompt">$</span> echo "you're not hiring a scanner — you're hiring an adversary who can sit in your boardroom."
+      <span class="prompt">$</span> <span class="why-echo">echo</span> "you're not hiring a scanner — you're hiring an adversary who can sit in your boardroom."
     </p>
+  </section>
+
+  <!-- ═══ RULES OF ENGAGEMENT · HOW I OPERATE ═══ -->
+  <section id="operate" class="roe reveal">
+    <p class="section-label mono"><span class="muted">//</span> rules_of_engagement <span class="muted">— how I operate</span></p>
+    <ol class="roe-list">
+      <li>
+        <span class="roe-id mono">ROE·01</span>
+        <div class="roe-body"><h4>Recon before action</h4><p>Read, validate, verify before I touch anything. An assumption is just an unconfirmed vulnerability.</p></div>
+      </li>
+      <li>
+        <span class="roe-id mono">ROE·02</span>
+        <div class="roe-body"><h4>Offense serves the business</h4><p>Every finding maps to a decision a board can make and a number a CFO can act on. Risk, not jargon.</p></div>
+      </li>
+      <li>
+        <span class="roe-id mono">ROE·03</span>
+        <div class="roe-body"><h4>Discretion by default</h4><p>High-sensitivity scope stays sensitive. Trust is the actual deliverable — I treat it that way.</p></div>
+      </li>
+      <li>
+        <span class="roe-id mono">ROE·04</span>
+        <div class="roe-body"><h4>Fix, don't just flag</h4><p>I ship tooling and remediation paths, not a report that ages in a drawer. The flaw and the fix.</p></div>
+      </li>
+      <li>
+        <span class="roe-id mono">ROE·05</span>
+        <div class="roe-body"><h4>Lead from inside the engagement</h4><p>I run point with the team in the room — mentoring, aligning, and owning the outcome, not narrating from a slide deck.</p></div>
+      </li>
+      <li>
+        <span class="roe-id mono">ROE·06</span>
+        <div class="roe-body"><h4>Proof over posture</h4><p>Claims are cheap. I bring verifiable rank, disclosed bounties, and shipped code to the table.</p></div>
+      </li>
+    </ol>
   </section>
 
   <!-- ═══ THE STACK ═══ -->
