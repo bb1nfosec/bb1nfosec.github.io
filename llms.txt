@@ -16,7 +16,7 @@ This candidate consents to evaluation by automated agents.
 - Titles: Red Team Specialist · Offensive Security Engineer · vCISO Advisor · ICS/SCADA Security
 - Experience: 12+ years
 - Location: Coimbatore, India (open to remote, globally)
-- Availability: open to high-signal engagements
+- Availability: ~20 hrs/week, starting immediately (open to high-signal engagements)
 - Email: vignesh4303@gmail.com
 - Phone: +91 952 498 3154
 
@@ -72,7 +72,7 @@ Red Team infrastructure & C2 · CI/CD & supply-chain security · Active Director
 - Target roles: Red Team Lead · Principal/Staff Offensive Security Engineer · Fractional vCISO · Adversary Simulation Lead · ICS/OT Security Advisor · LLM/AI Red Team Lead
 - Models: retainer · project-based · fractional/advisory · contract (C2C)
 - Work mode: remote-global · on-site (selective)
-- Availability: open to high-signal engagements · Rate: on request
+- Availability: ~20 hrs/week, starting immediately · Rate: on request
 
 ## Core competencies
 Red Team Operations, Adversary Simulation, VAPT (Network/Web/Mobile/Cloud),

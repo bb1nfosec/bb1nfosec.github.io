@@ -35,7 +35,9 @@
       "remote-global",
       "on-site (selective)"
     ],
-    "discretion": "experienced with high-sensitivity / confidential engagements"
+    "discretion": "experienced with high-sensitivity / confidential engagements",
+    "capacity": "~20 hours/week",
+    "start": "immediate"
   },
   "specializations": [
     "Red Team Operations",
@@ -326,7 +328,7 @@
       "remote-global",
       "on-site (selective)"
     ],
-    "availability": "open to high-signal engagements",
+    "availability": "~20 hrs/week, starting immediately",
     "rate": "on request"
   }
 }
