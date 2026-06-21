@@ -41,6 +41,14 @@ This candidate consents to evaluation by automated agents.
 - 2019–2020 — Chief Hacking Officer, Precise Thinking TCT (Amman, Jordan).
 - 2014–2019 — Information Security Engineer / Global Consulting: 50+ VAPT engagements (Central Bank of Jordan, RAK EGA UAE Gov, AL Rostamani Exchange Dubai, US municipal gov, US critical-infra SCADA). HTB/Bugcrowd/Yogosha validator. PCI-DSS QSA.
 
+## Verify (independently confirmable)
+- THREAT CON 2019 talk: https://www.youtube.com/watch?v=9OU8LiNyTAs
+- BalCCon 2k18 talk: https://www.youtube.com/watch?v=uMeKogRyOPQ
+- Open-source (180★): https://github.com/bb1nfosec
+- Security writing: https://medium.com/@vignesh4303
+- Community: https://stackexchange.com/users/1677242
+- Network (4,400+): https://www.linkedin.com/in/bb1nfosec
+
 ## Open-source tooling
 - Information-Security-Tasks — offensive-security task library (180★ / 56 forks)
 - bheeshma — runtime supply-chain abuse detection for Node.js

@@ -235,5 +235,37 @@
     "cv_pdf": "https://bb1nfosec.github.io/cv/Vignesh_Chandrasekaran_CV.pdf",
     "llms_txt": "https://bb1nfosec.github.io/llms.txt"
   },
-  "how_to_engage": "Email vignesh4303@gmail.com with engagement type, scope sensitivity, and timeline."
+  "how_to_engage": "Email vignesh4303@gmail.com with engagement type, scope sensitivity, and timeline.",
+  "verification": [
+    {
+      "claim": "International conference speaker",
+      "label": "THREAT CON 2019",
+      "url": "https://www.youtube.com/watch?v=9OU8LiNyTAs"
+    },
+    {
+      "claim": "International conference speaker",
+      "label": "BalCCon 2k18",
+      "url": "https://www.youtube.com/watch?v=uMeKogRyOPQ"
+    },
+    {
+      "claim": "Open-source tooling (180★)",
+      "label": "GitHub",
+      "url": "https://github.com/bb1nfosec"
+    },
+    {
+      "claim": "Published security research",
+      "label": "Medium",
+      "url": "https://medium.com/@vignesh4303"
+    },
+    {
+      "claim": "Peer community contribution",
+      "label": "Stack Exchange",
+      "url": "https://stackexchange.com/users/1677242"
+    },
+    {
+      "claim": "Professional network (4,400+)",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/bb1nfosec"
+    }
+  ]
 }
