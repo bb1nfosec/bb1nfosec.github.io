@@ -287,6 +287,21 @@ html.js .reveal.in{opacity:1;transform:none}
 .ct span{font-size:11px;letter-spacing:1px;text-transform:uppercase}
 .ct b{font-size:15px;color:#fff;font-weight:500}
 
+/* ═══ CONTACT FORM ═══ */
+.cform{margin-top:14px;display:flex;flex-direction:column;gap:10px;max-width:560px}
+.cf-row{display:flex;gap:10px;flex-wrap:wrap}
+.cf-row input{flex:1;min-width:180px}
+.cform input,.cform textarea{background:var(--panel-2);border:1px solid var(--line);border-radius:9px;
+  padding:11px 14px;color:var(--text);font-family:var(--font-body);font-size:14px;width:100%}
+.cform input::placeholder,.cform textarea::placeholder{color:var(--muted-2)}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px var(--teal-glow)}
+.cform textarea{resize:vertical;font-family:var(--font-body)}
+.cf-hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+.cf-submit{align-self:flex-start;margin-top:2px}
+.cf-status{font-size:12.5px;min-height:1.1em;margin-top:2px}
+.cf-status.ok{color:var(--teal)}
+.cf-status.err{color:var(--amber)}
+
 /* ═══ FOOTER ═══ */
 .foot{max-width:var(--maxw);margin:60px auto 40px;padding:24px clamp(16px,4vw,40px) 0;
   border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px}

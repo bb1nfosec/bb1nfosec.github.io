@@ -217,4 +217,25 @@ structured: <a href="/agent.json">/agent.json</a> (for your parser)
     if(ki===KONAMI.length){ egg.classList.add('show'); ki=0; console.log('%c# root access granted','color:#2DD4BF;font-weight:bold'); }
   });
 
+  /* ════ CONTACT FORM (Formspree, AJAX) ════ */
+  const cf=$('#contact-form');
+  if(cf){
+    const status=$('.cf-status',cf);
+    cf.addEventListener('submit', async e=>{
+      e.preventDefault();
+      if(cf.getAttribute('action').includes('YOUR_FORM_ID')){
+        status.className='cf-status err';
+        status.textContent='Form not wired yet — email vignesh4303@gmail.com directly.';
+        return;
+      }
+      status.className='cf-status'; status.textContent='sending…';
+      try{
+        const r=await fetch(cf.action,{method:'POST',body:new FormData(cf),headers:{'Accept':'application/json'}});
+        if(r.ok){ cf.reset(); status.className='cf-status ok'; status.textContent="✓ sent. I'll get back to you."; }
+        else{ const d=await r.json().catch(()=>({})); status.className='cf-status err';
+          status.textContent=(d.errors&&d.errors[0]&&d.errors[0].message)||'Something went wrong — email me directly.'; }
+      }catch(_){ status.className='cf-status err'; status.textContent='Network error — email vignesh4303@gmail.com.'; }
+    });
+  }
+
 })();

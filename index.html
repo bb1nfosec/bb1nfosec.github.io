@@ -504,6 +504,19 @@
           <span class="mono muted">location</span><b>Coimbatore, India · remote-global</b>
         </div>
       </div>
+
+      <h4 class="sub mono">// or drop a message</h4>
+      <form id="contact-form" class="cform" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="cf-row">
+          <input type="text" name="name" placeholder="your name" required aria-label="Your name" />
+          <input type="email" name="email" placeholder="your email" required aria-label="Your email" />
+        </div>
+        <input type="hidden" name="_subject" value="opsec-os — inbound from portfolio" />
+        <input type="text" name="_gotcha" class="cf-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <textarea name="message" rows="4" placeholder="engagement type, scope sensitivity, timeline…" required aria-label="Message"></textarea>
+        <button type="submit" class="btn btn-primary cf-submit">Send message →</button>
+        <p class="cf-status mono" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 
