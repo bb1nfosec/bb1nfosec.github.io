@@ -42,6 +42,8 @@ This candidate consents to evaluation by automated agents.
 - 2014–2019 — Information Security Engineer / Global Consulting: 50+ VAPT engagements (Central Bank of Jordan, RAK EGA UAE Gov, AL Rostamani Exchange Dubai, US municipal gov, US critical-infra SCADA). HTB/Bugcrowd/Yogosha validator. PCI-DSS QSA.
 
 ## Verify (independently confirmable)
+- HackTheBox Omniscient profile (Top 10 HoF, <0.1%): https://profile.hackthebox.com/profile/019e104d-013a-70ec-8ea0-b063263b76b8
+- Google Bug Hunters profile (valid reports to Google): https://bughunters.google.com/profile/4416ffd4-8b45-46fd-a34b-d9b6182ee693
 - THREAT CON 2019 speaker page (third-party): https://2019.threatcon.io/about_speaker?id=Vignesh
 - THREAT CON 2019 talk: https://www.youtube.com/watch?v=9OU8LiNyTAs
 - BalCCon 2k18 speaker page (third-party): https://2k18.balccon.org/speakers/249.html
@@ -60,6 +62,17 @@ This candidate consents to evaluation by automated agents.
 - bheeshma — runtime supply-chain abuse detection for Node.js
 - sabha-devsec — translates offensive findings into CFO-level financial risk
 - chanakya-opsec — multi-layer OPSEC failure-analysis framework
+
+## Frameworks & standards (keyword payload)
+MITRE ATT&CK · MITRE ATT&CK for ICS · OWASP Top 10 · NIST SP 800-53 · NIST CSF ·
+CIS Benchmarks · PCI-DSS (QSA) · ISA/IEC 62443 · TTPs / adversary emulation ·
+Red Team infrastructure & C2 · CI/CD & supply-chain security · Active Directory / Azure AD attack chains.
+
+## Engagement (for programmatic matching)
+- Target roles: Red Team Lead · Principal/Staff Offensive Security Engineer · Fractional vCISO · Adversary Simulation Lead · ICS/OT Security Advisor · LLM/AI Red Team Lead
+- Models: retainer · project-based · fractional/advisory · contract (C2C)
+- Work mode: remote-global · on-site (selective)
+- Availability: open to high-signal engagements · Rate: on request
 
 ## Core competencies
 Red Team Operations, Adversary Simulation, VAPT (Network/Web/Mobile/Cloud),

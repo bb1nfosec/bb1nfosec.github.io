@@ -67,7 +67,8 @@
     {
       "type": "rank",
       "label": "HackTheBox Omniscient — Global Top 10 Hall of Fame",
-      "rarity": "<0.1% of users"
+      "rarity": "<0.1% of users",
+      "profile": "https://profile.hackthebox.com/profile/019e104d-013a-70ec-8ea0-b063263b76b8"
     },
     {
       "type": "hall_of_fame",
@@ -78,7 +79,8 @@
         "Bugcrowd",
         "Medium"
       ],
-      "detail": "15+ reports to Google Bug Hunters"
+      "detail": "15+ reports to Google Bug Hunters",
+      "profile": "https://bughunters.google.com/profile/4416ffd4-8b45-46fd-a34b-d9b6182ee693"
     },
     {
       "type": "speaking",
@@ -90,9 +92,10 @@
     {
       "type": "speaking",
       "label": "BalCCon 2k18",
-      "title": "Hybrid Cloud Seeding & Infrastructure Attack Chains",
+      "title": "Hybrid Cloud Seeding — Hacking Microsoft Hybrid Cloud Infrastructure",
       "video": "https://www.youtube.com/watch?v=uMeKogRyOPQ",
-      "speaker_page": "https://2k18.balccon.org/speakers/249.html"
+      "speaker_page": "https://2k18.balccon.org/speakers/249.html",
+      "abstract": "https://2k18.balccon.org/events/252.html"
     },
     {
       "type": "teaching",
@@ -182,21 +185,21 @@
   "open_source": [
     {
       "name": "Information-Security-Tasks",
-      "desc": "Offensive-security task library",
+      "desc": "Daily-practice offensive-security problem set for working professionals; 180★ / 56 forks of community validation.",
       "stars": 180,
       "forks": 56
     },
     {
       "name": "bheeshma",
-      "desc": "Runtime dependency-behavior monitor; detects software supply-chain abuse in Node.js"
+      "desc": "Runtime dependency-behavior monitor for Node.js — flags malicious or compromised packages in npm pipelines before they execute, reducing supply-chain risk."
     },
     {
       "name": "sabha-devsec",
-      "desc": "Translates offensive findings into CFO-level financial risk impact"
+      "desc": "Turns offensive findings into CFO/board-level financial-risk numbers so executives can prioritize remediation by business impact."
     },
     {
       "name": "chanakya-opsec",
-      "desc": "Multi-layer OPSEC failure-analysis framework for threat modeling & signal correlation"
+      "desc": "Multi-layer OPSEC failure-analysis framework — surfaces where an operation's tradecraft leaks, for research-grade threat modeling and signal correlation."
     }
   ],
   "certifications": [
@@ -240,6 +243,16 @@
   "how_to_engage": "Email vignesh4303@gmail.com with engagement type, scope sensitivity, and timeline.",
   "verification": [
     {
+      "claim": "HackTheBox Omniscient — Top 10 Hall of Fame (<0.1%)",
+      "label": "HackTheBox profile",
+      "url": "https://profile.hackthebox.com/profile/019e104d-013a-70ec-8ea0-b063263b76b8"
+    },
+    {
+      "claim": "Bug Bounty Hall of Fame — valid reports to Google",
+      "label": "Google Bug Hunters profile",
+      "url": "https://bughunters.google.com/profile/4416ffd4-8b45-46fd-a34b-d9b6182ee693"
+    },
+    {
       "claim": "International conference speaker (third-party listing)",
       "label": "THREAT CON 2019 — speaker page",
       "url": "https://2019.threatcon.io/about_speaker?id=Vignesh"
@@ -279,5 +292,41 @@
       "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/bb1nfosec"
     }
-  ]
+  ],
+  "frameworks_standards": [
+    "MITRE ATT&CK",
+    "MITRE ATT&CK for ICS",
+    "OWASP Top 10",
+    "NIST SP 800-53",
+    "NIST CSF",
+    "CIS Benchmarks",
+    "PCI-DSS (QSA)",
+    "ISA/IEC 62443",
+    "TTPs / adversary emulation",
+    "Red Team infrastructure / C2",
+    "CI/CD & supply-chain security",
+    "Active Directory / Azure AD attack chains"
+  ],
+  "engagement": {
+    "target_roles": [
+      "Red Team Lead",
+      "Principal / Staff Offensive Security Engineer",
+      "Fractional vCISO",
+      "Adversary Simulation Lead",
+      "ICS/OT Security Advisor",
+      "LLM/AI Red Team Lead"
+    ],
+    "models": [
+      "retainer",
+      "project-based",
+      "fractional / advisory",
+      "contract (C2C)"
+    ],
+    "work_mode": [
+      "remote-global",
+      "on-site (selective)"
+    ],
+    "availability": "open to high-signal engagements",
+    "rate": "on request"
+  }
 }

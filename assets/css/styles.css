@@ -20,7 +20,7 @@
   --amber:#F5C451;
   --radius:14px;
   --radius-sm:9px;
-  --maxw:980px;
+  --maxw:1120px;
   --font-sans:'Chakra Petch',ui-sans-serif,system-ui,sans-serif;
   --font-body:'IBM Plex Sans',ui-sans-serif,system-ui,sans-serif;
   --font-mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,monospace;
@@ -143,7 +143,14 @@ kbd{font-family:var(--font-mono);font-size:.8em;background:var(--panel-2);border
 .ro-v{color:#c9d4de}
 .ro-dim{color:var(--muted-2)}
 .ro-ok{color:var(--teal)}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.cred{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:#c2ccd6;
+  background:rgba(45,212,191,.06);border:1px solid rgba(45,212,191,.28);border-radius:8px;padding:7px 12px}
+.cred:hover{border-color:var(--teal);background:rgba(45,212,191,.12);color:#fff}
+.cred-k{color:var(--teal);font-weight:600}
+.cred-v{color:var(--muted);font-size:11px}
+.cred:hover .cred-v{color:var(--teal)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body);font-weight:500;
   font-size:14.5px;padding:11px 20px;border-radius:10px;border:1px solid var(--line);
   background:var(--panel);color:var(--text);cursor:pointer;transition:.18s}
