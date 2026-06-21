@@ -42,12 +42,18 @@ This candidate consents to evaluation by automated agents.
 - 2014–2019 — Information Security Engineer / Global Consulting: 50+ VAPT engagements (Central Bank of Jordan, RAK EGA UAE Gov, AL Rostamani Exchange Dubai, US municipal gov, US critical-infra SCADA). HTB/Bugcrowd/Yogosha validator. PCI-DSS QSA.
 
 ## Verify (independently confirmable)
+- THREAT CON 2019 speaker page (third-party): https://2019.threatcon.io/about_speaker?id=Vignesh
 - THREAT CON 2019 talk: https://www.youtube.com/watch?v=9OU8LiNyTAs
+- BalCCon 2k18 speaker page (third-party): https://2k18.balccon.org/speakers/249.html
 - BalCCon 2k18 talk: https://www.youtube.com/watch?v=uMeKogRyOPQ
 - Open-source (180★): https://github.com/bb1nfosec
-- Security writing: https://medium.com/@vignesh4303
+- Security writing: https://bbinfosec.medium.com/
 - Community: https://stackexchange.com/users/1677242
 - Network (4,400+): https://www.linkedin.com/in/bb1nfosec
+
+## Talks & field research
+- THREAT CON 2019 — "Hacking Human Lives via Body Area Network": security of Body Area Networks (the wireless mesh of wearable/implantable medical devices) and how weaknesses become a life-safety attack surface. Focus: medical/IoT device security, wireless protocol attack surface, safety-critical threat modeling.
+- BalCCon 2k18 — "Hybrid Cloud Seeding & Infrastructure Attack Chains": adversary movement across hybrid-cloud estates — seeding footholds and chaining misconfigurations across on-prem/cloud trust boundaries. Focus: hybrid-cloud attack chains, lateral movement, infrastructure misconfiguration.
 
 ## Open-source tooling
 - Information-Security-Tasks — offensive-security task library (180★ / 56 forks)
@@ -76,7 +82,7 @@ Python, .NET, JavaScript/Node.js, Bash/Shell, language-agnostic security tooling
 - GitHub: https://github.com/bb1nfosec
 - LinkedIn: https://www.linkedin.com/in/bb1nfosec (4,400+ followers)
 - Twitter/X: https://twitter.com/bb1nfosec
-- Medium: https://medium.com/@vignesh4303
+- Medium: https://bbinfosec.medium.com/
 - CV (PDF): https://bb1nfosec.github.io/cv/Vignesh_Chandrasekaran_CV.pdf
 - Structured brief: https://bb1nfosec.github.io/agent.json
 

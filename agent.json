@@ -84,13 +84,15 @@
       "type": "speaking",
       "label": "THREAT CON 2019",
       "title": "Hacking Human Lives via Body Area Network",
-      "video": "https://www.youtube.com/watch?v=9OU8LiNyTAs"
+      "video": "https://www.youtube.com/watch?v=9OU8LiNyTAs",
+      "speaker_page": "https://2019.threatcon.io/about_speaker?id=Vignesh"
     },
     {
       "type": "speaking",
       "label": "BalCCon 2k18",
       "title": "Hybrid Cloud Seeding & Infrastructure Attack Chains",
-      "video": "https://www.youtube.com/watch?v=uMeKogRyOPQ"
+      "video": "https://www.youtube.com/watch?v=uMeKogRyOPQ",
+      "speaker_page": "https://2k18.balccon.org/speakers/249.html"
     },
     {
       "type": "teaching",
@@ -231,12 +233,22 @@
     "github": "https://github.com/bb1nfosec",
     "linkedin": "https://www.linkedin.com/in/bb1nfosec",
     "twitter": "https://twitter.com/bb1nfosec",
-    "medium": "https://medium.com/@vignesh4303",
+    "medium": "https://bbinfosec.medium.com/",
     "cv_pdf": "https://bb1nfosec.github.io/cv/Vignesh_Chandrasekaran_CV.pdf",
     "llms_txt": "https://bb1nfosec.github.io/llms.txt"
   },
   "how_to_engage": "Email vignesh4303@gmail.com with engagement type, scope sensitivity, and timeline.",
   "verification": [
+    {
+      "claim": "International conference speaker (third-party listing)",
+      "label": "THREAT CON 2019 — speaker page",
+      "url": "https://2019.threatcon.io/about_speaker?id=Vignesh"
+    },
+    {
+      "claim": "International conference speaker (third-party listing)",
+      "label": "BalCCon 2k18 — speaker page",
+      "url": "https://2k18.balccon.org/speakers/249.html"
+    },
     {
       "claim": "International conference speaker",
       "label": "THREAT CON 2019",
@@ -255,7 +267,7 @@
     {
       "claim": "Published security research",
       "label": "Medium",
-      "url": "https://medium.com/@vignesh4303"
+      "url": "https://bbinfosec.medium.com/"
     },
     {
       "claim": "Peer community contribution",
