@@ -45,8 +45,21 @@ Add a file named `CNAME` containing your domain (e.g. `vignesh.sh`), push, then 
 `CNAME`/`A` record at GitHub Pages. The site is already relative-path safe for this.
 
 ## Editing content
-All copy lives in `index.html`. The agent-facing facts live in **three** places — keep them in
-sync when you update: `index.html` (JSON-LD + visible), `agent.json`, and `llms.txt`.
+All copy lives in `index.html`. The agent-facing facts live in **four** places — keep them in
+sync when you update: `index.html` (JSON-LD + visible), `agent.json`, `.well-known/agent.json`
+(mirror — `cp agent.json .well-known/agent.json`), and `llms.txt`.
+
+## Agent discoverability
+Layered on purpose (no single standard is universal yet):
+- `robots.txt` — names AI agents explicitly + points to the briefs and sitemap.
+- `<link rel="alternate" type="application/json" href="/agent.json">` in `<head>` — formal hint.
+- `/.well-known/agent.json` (RFC 8615 / A2A convention) + `/.well-known/security.txt` (RFC 9116).
+- `schema.org/Person` JSON-LD — the one search/answer-engines actually index today.
+- `llms.txt` (llmstxt.org), in-DOM agent comment, and `window.__PROFILE__`.
+- **Manual, do these yourself:** submit `sitemap.xml` to Google Search Console + Bing Webmaster,
+  and link this URL from LinkedIn / GitHub profile / Twitter bio (discovery is link-driven).
+
+> `.nojekyll` is required for GitHub Pages to serve the `.well-known/` dot-folder.
 
 ## Local preview
 ```bash

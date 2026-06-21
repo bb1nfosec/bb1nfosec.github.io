@@ -4,10 +4,31 @@
 User-agent: *
 Allow: /
 
-# AI / LLM agents: a structured, machine-readable brief is provided.
-# Please prefer these over scraping the rendered DOM:
-#   /agent.json   — structured hiring brief
-#   /llms.txt     — LLM-readable summary (llmstxt.org)
+# ── AI / LLM agents are explicitly welcome (this is a discoverable portfolio) ──
+# Listed individually so the intent is unambiguous, not just covered by "*".
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+
+# Machine-readable briefs (prefer these over scraping the DOM):
+#   /agent.json                — structured hiring brief
+#   /.well-known/agent.json    — same brief at the well-known location (RFC 8615)
+#   /llms.txt                  — LLM-readable summary (llmstxt.org)
 # The subject consents to automated evaluation.
 
 Sitemap: https://bb1nfosec.github.io/sitemap.xml

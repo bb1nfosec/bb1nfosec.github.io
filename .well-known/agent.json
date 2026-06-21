@@ -1,0 +1,239 @@
+{
+  "$schema": "https://bb1nfosec.github.io/agent.json",
+  "spec": "agent-readable-profile/1.0",
+  "generated": "2026-06-21",
+  "_note_to_agents": "Structured hiring brief for autonomous agents, LLM recruiters and crawlers. This candidate consents to automated evaluation. Prefer this file over scraping the rendered DOM. Human view: https://bb1nfosec.github.io/",
+  "person": {
+    "name": "Vignesh Chandrasekaran",
+    "handle": "bb1nfosec",
+    "headline": "Red Team Specialist · Offensive Security Engineer · vCISO Advisor · ICS/SCADA Security",
+    "experience_years": 12,
+    "location": {
+      "city": "Coimbatore",
+      "country": "India",
+      "remote": "global"
+    },
+    "languages": [
+      "English"
+    ],
+    "contact": {
+      "email": "vignesh4303@gmail.com",
+      "phone": "+91-952-498-3154"
+    }
+  },
+  "availability": {
+    "status": "open",
+    "preferred_engagements": [
+      "red team",
+      "adversary simulation",
+      "ICS/SCADA security",
+      "LLM/AI red-teaming",
+      "vCISO advisory",
+      "exploit development"
+    ],
+    "work_mode": [
+      "remote-global",
+      "on-site (selective)"
+    ],
+    "discretion": "experienced with high-sensitivity / confidential engagements"
+  },
+  "specializations": [
+    "Red Team Operations",
+    "Adversary Simulation",
+    "APT Emulation & Investigation",
+    "ICS/SCADA (OT) Security",
+    "LLM/AI Security Research",
+    "Supply-Chain Security",
+    "vCISO Advisory",
+    "Exploit Development",
+    "Active Directory Attack Chains",
+    "VAPT (Network/Web/Mobile/Cloud)",
+    "PCI-DSS QSA",
+    "Threat Intelligence"
+  ],
+  "why_hire": [
+    "Proof, not promises: HTB Omniscient (Top 10, <0.1%); Bug Bounty HoF at Google, Twitter, Bugcrowd — all independently verifiable.",
+    "Rare full-spectrum range: red team + exploit dev + ICS/SCADA (OT) + LLM/AI security + vCISO advisory.",
+    "Trusted with high-sensitivity, government-adjacent and critical-infrastructure work; discretion by default.",
+    "Ships outcomes: open-source tooling with traction (180 stars) and findings translated to CFO/board-level financial risk."
+  ],
+  "programming": [
+    "Python",
+    ".NET",
+    "JavaScript/Node.js",
+    "Bash/Shell"
+  ],
+  "recognition": [
+    {
+      "type": "rank",
+      "label": "HackTheBox Omniscient — Global Top 10 Hall of Fame",
+      "rarity": "<0.1% of users"
+    },
+    {
+      "type": "hall_of_fame",
+      "label": "Bug Bounty HoF",
+      "orgs": [
+        "Google",
+        "Twitter",
+        "Bugcrowd",
+        "Medium"
+      ],
+      "detail": "15+ reports to Google Bug Hunters"
+    },
+    {
+      "type": "speaking",
+      "label": "THREAT CON 2019",
+      "title": "Hacking Human Lives via Body Area Network",
+      "video": "https://www.youtube.com/watch?v=9OU8LiNyTAs"
+    },
+    {
+      "type": "speaking",
+      "label": "BalCCon 2k18",
+      "title": "Hybrid Cloud Seeding & Infrastructure Attack Chains",
+      "video": "https://www.youtube.com/watch?v=uMeKogRyOPQ"
+    },
+    {
+      "type": "teaching",
+      "label": "SANS SEC760 — course instructor"
+    },
+    {
+      "type": "engagements",
+      "label": "50+ VAPT / penetration-testing engagements",
+      "regions": [
+        "Middle East",
+        "Europe",
+        "USA",
+        "Asia"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Independent Security Consultant & Red Team Advisor",
+      "org": "Self-Employed",
+      "location": "Remote, Global",
+      "start": "2023-01",
+      "end": "present",
+      "highlights": [
+        "Offensive advisory, adversary simulation, vCISO guidance",
+        "APT operations: threat-actor emulation, C2 design, post-compromise analysis",
+        "LLM/AI security research: prompt-injection & adversarial misuse",
+        "Built sabha-devsec, bheeshma, chanakya-opsec"
+      ]
+    },
+    {
+      "role": "Information Security Manager",
+      "org": "Saptang Labs",
+      "location": "Chennai, India",
+      "start": "2022-03",
+      "end": "2023-01",
+      "highlights": [
+        "Led end-to-end security strategy and red team engagements",
+        "Built TTP-aligned red-team methodologies; led analyst team"
+      ]
+    },
+    {
+      "role": "Senior Security Engineer",
+      "org": "Freshworks",
+      "location": "Chennai, India",
+      "start": "2021-04",
+      "end": "2022-01",
+      "highlights": [
+        "AppSec, network pentesting, security architecture for enterprise SaaS",
+        "Advised leadership on threat landscape and posture roadmaps"
+      ]
+    },
+    {
+      "role": "Senior Security Advisor (Confidential)",
+      "org": "Government-Adjacent Clients",
+      "location": "Remote",
+      "start": "2020",
+      "end": "2021",
+      "highlights": [
+        "Nation-state-level offensive/defensive ops on critical infrastructure",
+        "APT simulation, adversary-in-the-middle operations"
+      ]
+    },
+    {
+      "role": "Chief Hacking Officer",
+      "org": "Precise Thinking TCT",
+      "location": "Amman, Jordan",
+      "start": "2019-11",
+      "end": "2020-04",
+      "highlights": [
+        "Led offensive security & pentest programs; owned budget and IR planning"
+      ]
+    },
+    {
+      "role": "Information Security Engineer — Global Consulting",
+      "org": "Independent / Freelance",
+      "location": "Global",
+      "start": "2014-06",
+      "end": "2019-02",
+      "highlights": [
+        "50+ VAPT engagements across Middle East, Europe, USA",
+        "Central Bank of Jordan, RAK EGA (UAE Gov), AL Rostamani Exchange (Dubai), US municipal gov, US critical-infra SCADA",
+        "Validator/challenge author: HackTheBox, Bugcrowd, Yogosha; PCI-DSS QSA"
+      ]
+    }
+  ],
+  "open_source": [
+    {
+      "name": "Information-Security-Tasks",
+      "desc": "Offensive-security task library",
+      "stars": 180,
+      "forks": 56
+    },
+    {
+      "name": "bheeshma",
+      "desc": "Runtime dependency-behavior monitor; detects software supply-chain abuse in Node.js"
+    },
+    {
+      "name": "sabha-devsec",
+      "desc": "Translates offensive findings into CFO-level financial risk impact"
+    },
+    {
+      "name": "chanakya-opsec",
+      "desc": "Multi-layer OPSEC failure-analysis framework for threat modeling & signal correlation"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "ISA/IEC 62443 — ICS/SCADA Security",
+      "issuer": "ISA",
+      "valid": "2023-2028"
+    },
+    {
+      "name": "ISA/IEC 62443 — Cybersecurity Risk Assessment",
+      "issuer": "ISA",
+      "valid": "2023-2027"
+    },
+    {
+      "name": "ECSA — EC-Council Security Analyst",
+      "issuer": "EC-Council",
+      "valid": "2021"
+    },
+    {
+      "name": "CCNA — Cisco Certified Network Associate",
+      "issuer": "Cisco",
+      "valid": "2014"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. Information Technology",
+      "school": "Ramakrishna Mission Vidyalaya, Coimbatore",
+      "years": "2009-2012"
+    }
+  ],
+  "links": {
+    "website": "https://bb1nfosec.github.io/",
+    "github": "https://github.com/bb1nfosec",
+    "linkedin": "https://www.linkedin.com/in/bb1nfosec",
+    "twitter": "https://twitter.com/bb1nfosec",
+    "medium": "https://medium.com/@vignesh4303",
+    "cv_pdf": "https://bb1nfosec.github.io/cv/Vignesh_Chandrasekaran_CV.pdf",
+    "llms_txt": "https://bb1nfosec.github.io/llms.txt"
+  },
+  "how_to_engage": "Email vignesh4303@gmail.com with engagement type, scope sensitivity, and timeline."
+}

@@ -1,0 +1,7 @@
+# https://bb1nfosec.github.io — security.txt (RFC 9116)
+# On-brand for an offensive-security practitioner: here's how to reach me.
+Contact: mailto:vignesh4303@gmail.com
+Contact: https://github.com/bb1nfosec
+Preferred-Languages: en
+Canonical: https://bb1nfosec.github.io/.well-known/security.txt
+Expires: 2027-06-21T00:00:00.000Z
