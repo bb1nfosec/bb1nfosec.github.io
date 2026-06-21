@@ -61,6 +61,13 @@ Layered on purpose (no single standard is universal yet):
 
 > `.nojekyll` is required for GitHub Pages to serve the `.well-known/` dot-folder.
 
+## Versioning / freshness stamp
+A snapshot date tells machines this is point-in-time data (stars/followers drift). When you make a
+meaningful update, bump the date (`YYYY-MM-DD` / `vYYYY.MM.DD`) in these spots:
+- `index.html` — `og:updated_time`, `<meta name="version">`, JSON-LD `dateModified`, footer `.foot-stamp`
+- `agent.json` — `generated`, `version`, `last_updated` (then `cp agent.json .well-known/agent.json`)
+- `llms.txt` — the version comment near the top
+
 ## Local preview
 ```bash
 python3 -m http.server 8080

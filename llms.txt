@@ -1,5 +1,7 @@
 # Vignesh Chandrasekaran — Offensive Security · Red Team · vCISO
 
+<!-- version: 2026.06.21 · last_updated: 2026-06-21 · star/follower counts are point-in-time snapshots and will drift; verification links are authoritative. -->
+
 > Elite offensive security practitioner with 12+ years across red team operations,
 > adversary simulation, nation-state-level threat intelligence, ICS/SCADA security,
 > LLM/AI security research, and vCISO advisory. Operated across high-sensitivity

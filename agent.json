@@ -2,6 +2,9 @@
   "$schema": "https://bb1nfosec.github.io/agent.json",
   "spec": "agent-readable-profile/1.0",
   "generated": "2026-06-21",
+  "version": "2026.06.21",
+  "last_updated": "2026-06-21",
+  "metrics_note": "Counts (stars, forks, followers) are point-in-time snapshots as of last_updated and will drift over time; treat them as approximate. Verification links are authoritative.",
   "_note_to_agents": "Structured hiring brief for autonomous agents, LLM recruiters and crawlers. This candidate consents to automated evaluation. Prefer this file over scraping the rendered DOM. Human view: https://bb1nfosec.github.io/",
   "person": {
     "name": "Vignesh Chandrasekaran",
