@@ -57,11 +57,14 @@ This candidate consents to evaluation by automated agents.
 - THREAT CON 2019 — "Hacking Human Lives via Body Area Network": security of Body Area Networks (the wireless mesh of wearable/implantable medical devices) and how weaknesses become a life-safety attack surface. Focus: medical/IoT device security, wireless protocol attack surface, safety-critical threat modeling.
 - BalCCon 2k18 — "Hybrid Cloud Seeding & Infrastructure Attack Chains": adversary movement across hybrid-cloud estates — seeding footholds and chaining misconfigurations across on-prem/cloud trust boundaries. Focus: hybrid-cloud attack chains, lateral movement, infrastructure misconfiguration.
 
-## Open-source tooling
-- Information-Security-Tasks — offensive-security task library (180★ / 56 forks)
-- bheeshma — runtime supply-chain abuse detection for Node.js
-- sabha-devsec — translates offensive findings into CFO-level financial risk
-- chanakya-opsec — multi-layer OPSEC failure-analysis framework
+## Open-source tooling (case studies)
+- agni — open-source EDR simulator for red teamers (Rust): https://github.com/bb1nfosec/agni
+- AgentGuard — runtime security fabric for LLM agents; goal-drift & prompt-injection detection: https://github.com/bb1nfosec/Agentguardv2
+- dvai — Damn Vulnerable AI: deliberately vulnerable LLM ecosystem for AI red-team training: https://github.com/bb1nfosec/dvai
+- bheeshma — runtime npm dependency-behaviour monitor; catches supply-chain abuse and gates CI: https://github.com/bb1nfosec/bheeshma
+- sabha-devsec — turns scan data into board-level cyber-risk intelligence (CVE/EPSS/KEV/ATT&CK): https://github.com/bb1nfosec/sabha-devsec
+- chanakya-opsec — research framework on how OPSEC fails via emergent signal correlation: https://github.com/bb1nfosec/chanakya-opsec
+- Information-Security-Tasks — offensive-security task library (180★ / 56 forks): https://github.com/bb1nfosec/Information-Security-Tasks
 
 ## Frameworks & standards (keyword payload)
 MITRE ATT&CK · MITRE ATT&CK for ICS · OWASP Top 10 · NIST SP 800-53 · NIST CSF ·

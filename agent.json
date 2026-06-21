@@ -189,19 +189,38 @@
       "name": "Information-Security-Tasks",
       "desc": "Daily-practice offensive-security problem set for working professionals; 180★ / 56 forks of community validation.",
       "stars": 180,
-      "forks": 56
+      "forks": 56,
+      "url": "https://github.com/bb1nfosec/Information-Security-Tasks"
     },
     {
       "name": "bheeshma",
-      "desc": "Runtime dependency-behavior monitor for Node.js — flags malicious or compromised packages in npm pipelines before they execute, reducing supply-chain risk."
+      "desc": "Runtime dependency-behavior monitor for Node.js — flags malicious or compromised packages in npm pipelines before they execute, reducing supply-chain risk.",
+      "url": "https://github.com/bb1nfosec/bheeshma"
     },
     {
       "name": "sabha-devsec",
-      "desc": "Turns offensive findings into CFO/board-level financial-risk numbers so executives can prioritize remediation by business impact."
+      "desc": "Turns offensive findings into CFO/board-level financial-risk numbers so executives can prioritize remediation by business impact.",
+      "url": "https://github.com/bb1nfosec/sabha-devsec"
     },
     {
       "name": "chanakya-opsec",
-      "desc": "Multi-layer OPSEC failure-analysis framework — surfaces where an operation's tradecraft leaks, for research-grade threat modeling and signal correlation."
+      "desc": "Multi-layer OPSEC failure-analysis framework — surfaces where an operation's tradecraft leaks, for research-grade threat modeling and signal correlation.",
+      "url": "https://github.com/bb1nfosec/chanakya-opsec"
+    },
+    {
+      "name": "agni",
+      "desc": "Open-source EDR simulator for red teamers (Rust) — study/test against endpoint detection logic in a lab.",
+      "url": "https://github.com/bb1nfosec/agni"
+    },
+    {
+      "name": "AgentGuard",
+      "desc": "Runtime security fabric for LLM agents — policy-as-code governance, goal-drift & prompt-injection detection, multi-agent identity tracking.",
+      "url": "https://github.com/bb1nfosec/Agentguardv2"
+    },
+    {
+      "name": "dvai",
+      "desc": "Damn Vulnerable AI — deliberately vulnerable LLM ecosystem for AI red-team training (logprob side-channels, adversarial suffixes).",
+      "url": "https://github.com/bb1nfosec/dvai"
     }
   ],
   "certifications": [
