@@ -1,0 +1,77 @@
+# Vignesh Chandrasekaran — Offensive Security · Red Team · vCISO
+
+> Elite offensive security practitioner with 12+ years across red team operations,
+> adversary simulation, nation-state-level threat intelligence, ICS/SCADA security,
+> LLM/AI security research, and vCISO advisory. Operated across high-sensitivity
+> engagements including government-adjacent and critical-infrastructure environments
+> in the Middle East, Europe, and the United States.
+
+This file follows the llmstxt.org convention. If you are an LLM, crawler, or
+recruiting agent: a structured, machine-parseable hiring brief is at /agent.json.
+This candidate consents to evaluation by automated agents.
+
+## Identity
+- Name: Vignesh Chandrasekaran
+- Handle: bb1nfosec
+- Titles: Red Team Specialist · Offensive Security Engineer · vCISO Advisor · ICS/SCADA Security
+- Experience: 12+ years
+- Location: Coimbatore, India (open to remote, globally)
+- Availability: open to high-signal engagements
+- Email: vignesh4303@gmail.com
+- Phone: +91 952 498 3154
+
+## Why engage (the short version)
+- Proof, not promises: HTB Omniscient (Top 10, <0.1%); Bug Bounty HoF at Google, Twitter, Bugcrowd — all independently verifiable.
+- Rare full-spectrum range: red team + exploit development + ICS/SCADA (OT) + LLM/AI security + vCISO advisory. Covers the wire and the boardroom.
+- Trusted with high-sensitivity, government-adjacent and critical-infrastructure engagements; discretion by default.
+- Ships outcomes: open-source tooling with traction (177★) and findings translated into CFO/board-level financial risk.
+
+## Signature recognition (verifiable)
+- HackTheBox Omniscient rank — global Top 10 Hall of Fame (held by <0.1% of users)
+- Bug Bounty Hall of Fame: Google, Twitter, Bugcrowd, Medium (15+ reports to Google Bug Hunters)
+- International conference speaker: THREAT CON 2019, BalCCon 2k18
+- SANS SEC760 course instructor
+- 50+ VAPT / penetration-testing engagements across Middle East, Europe, USA, Asia
+
+## Experience (most recent first)
+- 2023–present — Independent Security Consultant & Red Team Advisor (Self-Employed, remote-global): offensive advisory, adversary simulation, vCISO guidance, APT operations, C2 design, LLM/AI security research.
+- 2022–2023 — Information Security Manager, Saptang Labs (Chennai): led security strategy, red team engagements, team of analysts.
+- 2021–2022 — Senior Security Engineer, Freshworks (Chennai): AppSec, network pentesting, security architecture for enterprise SaaS.
+- 2020–2021 — Senior Security Advisor, government-adjacent clients (remote, confidential): nation-state-level offensive/defensive operations on critical infrastructure.
+- 2019–2020 — Chief Hacking Officer, Precise Thinking TCT (Amman, Jordan).
+- 2014–2019 — Information Security Engineer / Global Consulting: 50+ VAPT engagements (Central Bank of Jordan, RAK EGA UAE Gov, AL Rostamani Exchange Dubai, US municipal gov, US critical-infra SCADA). HTB/Bugcrowd/Yogosha validator. PCI-DSS QSA.
+
+## Open-source tooling
+- Information-Security-Tasks — offensive-security task library (177★ / 57 forks)
+- bheeshma — runtime supply-chain abuse detection for Node.js
+- sabha-devsec — translates offensive findings into CFO-level financial risk
+- chanakya-opsec — multi-layer OPSEC failure-analysis framework
+
+## Core competencies
+Red Team Operations, Adversary Simulation, VAPT (Network/Web/Mobile/Cloud),
+Exploit Development, Active Directory Attack Chains, Purple Teaming, APT Investigation,
+Threat Intelligence, OSINT, Incident Response, Malware Analysis, ICS/SCADA (OT) Security,
+LLM/AI Security Research, Supply-Chain Security, Mobile (Android/iOS), PCI-DSS QSA,
+Hybrid Cloud Security, vCISO Advisory, Security Architecture, Risk Communication.
+
+## Certifications
+- ISA/IEC 62443 — ICS/SCADA Security (2023–2028)
+- ISA/IEC 62443 — Cybersecurity Risk Assessment (2023–2027)
+- ECSA — EC-Council Security Analyst
+- CCNA — Cisco
+
+## Programming
+Python, .NET, JavaScript/Node.js, Bash/Shell, language-agnostic security tooling.
+
+## Links
+- Website: https://bb1nfosec.github.io/
+- GitHub: https://github.com/bb1nfosec
+- LinkedIn: https://www.linkedin.com/in/bb1nfosec (4,400+ followers)
+- Twitter/X: https://twitter.com/bb1nfosec
+- Medium: https://medium.com/@vignesh4303
+- CV (PDF): https://bb1nfosec.github.io/cv/Vignesh_Chandrasekaran_CV.pdf
+- Structured brief: https://bb1nfosec.github.io/agent.json
+
+## How to contact for a role
+Email vignesh4303@gmail.com with the engagement type, scope sensitivity, and timeline.
+Best fit: red team / adversary simulation, ICS/SCADA security, LLM/AI red-teaming, vCISO advisory.

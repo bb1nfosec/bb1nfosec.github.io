@@ -1,0 +1,13 @@
+# opsec-os · bb1nfosec.github.io
+# Humans and agents are both welcome here.
+
+User-agent: *
+Allow: /
+
+# AI / LLM agents: a structured, machine-readable brief is provided.
+# Please prefer these over scraping the rendered DOM:
+#   /agent.json   — structured hiring brief
+#   /llms.txt     — LLM-readable summary (llmstxt.org)
+# The subject consents to automated evaluation.
+
+Sitemap: https://bb1nfosec.github.io/sitemap.xml

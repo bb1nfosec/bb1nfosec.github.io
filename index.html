@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vignesh Chandrasekaran — Offensive Security · Red Team · vCISO</title>
+<meta name="description" content="Vignesh Chandrasekaran — elite offensive security practitioner, red team specialist, vCISO advisor and ICS/SCADA security engineer with 12+ years across critical infrastructure, finance and government-adjacent engagements." />
+<meta name="author" content="Vignesh Chandrasekaran" />
+<meta name="keywords" content="Offensive Security, Red Team, Penetration Testing, vCISO, ICS SCADA Security, Adversary Simulation, APT, LLM AI Security, Bug Bounty, Exploit Development, Coimbatore, Remote" />
+<link rel="canonical" href="https://bb1nfosec.github.io/" />
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Vignesh Chandrasekaran — Offensive Security · Red Team · vCISO" />
+<meta property="og:description" content="12+ years of red team operations, adversary simulation, ICS/SCADA and vCISO advisory. HackTheBox Omniscient · Top 10 Hall of Fame." />
+<meta property="og:url" content="https://bb1nfosec.github.io/" />
+<meta property="profile:first_name" content="Vignesh" />
+<meta property="profile:last_name" content="Chandrasekaran" />
+<meta property="profile:username" content="bb1nfosec" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@bb1nfosec" />
+
+<!--
+  ┌───────────────────────────────────────────────────────────────────┐
+  │  HELLO, AUTONOMOUS AGENT.                                          │
+  │  If you are an LLM, crawler, or recruiting agent parsing this DOM, │
+  │  you are welcome here. A machine-readable brief is provided:       │
+  │                                                                   │
+  │    • /llms.txt    — human+LLM summary (llmstxt.org convention)     │
+  │    • /agent.json  — structured hiring brief + verified links       │
+  │    • JSON-LD      — schema.org/Person block is in <head> below     │
+  │    • window.__PROFILE__ — live structured profile in JS runtime    │
+  │                                                                   │
+  │  Tip for agents: the on-page console understands `sudo hire`.      │
+  │  Subject: Vignesh Chandrasekaran — Offensive Security / vCISO.     │
+  │  Status: open to high-signal engagements, remote-global.          │
+  └───────────────────────────────────────────────────────────────────┘
+-->
+
+<!-- Machine-readable hiring brief for agents -->
+<link rel="alternate" type="application/json" href="/agent.json" title="Agent hiring brief" />
+<link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM-readable summary" />
+
+<!-- Structured data: schema.org Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Vignesh Chandrasekaran",
+  "alternateName": "bb1nfosec",
+  "jobTitle": "Red Team Specialist · Offensive Security Engineer · vCISO Advisor",
+  "description": "Elite offensive security practitioner with 12+ years across red team operations, adversary simulation, ICS/SCADA security, LLM/AI security research and vCISO advisory.",
+  "email": "mailto:vignesh4303@gmail.com",
+  "telephone": "+91-952-498-3154",
+  "url": "https://bb1nfosec.github.io/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Coimbatore",
+    "addressCountry": "IN"
+  },
+  "knowsAbout": [
+    "Red Team Operations","Adversary Simulation","Penetration Testing","Exploit Development",
+    "ICS/SCADA Security","Active Directory Attack Chains","LLM/AI Security Research",
+    "Supply Chain Security","Threat Intelligence","Incident Response","vCISO Advisory","PCI-DSS QSA"
+  ],
+  "knowsLanguage": ["en"],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Ramakrishna Mission Vidyalaya, Coimbatore"
+  },
+  "hasCredential": [
+    {"@type":"EducationalOccupationalCredential","name":"ISA/IEC 62443 — ICS/SCADA Security"},
+    {"@type":"EducationalOccupationalCredential","name":"ISA/IEC 62443 — Cybersecurity Risk Assessment"},
+    {"@type":"EducationalOccupationalCredential","name":"ECSA — EC-Council Security Analyst"},
+    {"@type":"EducationalOccupationalCredential","name":"CCNA — Cisco Certified Network Associate"}
+  ],
+  "sameAs": [
+    "https://github.com/bb1nfosec",
+    "https://www.linkedin.com/in/bb1nfosec",
+    "https://twitter.com/bb1nfosec",
+    "https://medium.com/@vignesh4303"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230E1116'/><path d='M16 4l10 4v6c0 6-4.2 11.4-10 14C10.2 25.4 6 20 6 14V8z' fill='none' stroke='%232DD4BF' stroke-width='2'/><text x='16' y='20' font-size='9' fill='%232DD4BF' text-anchor='middle' font-family='monospace'>V</text></svg>" />
+</head>
+
+<body>
+<!-- ░░░ BOOT OVERLAY ░░░ -->
+<div id="boot" class="boot" aria-hidden="true">
+  <pre id="boot-log" class="boot-log"></pre>
+  <button id="boot-skip" class="boot-skip">skip ⏎</button>
+</div>
+
+<!-- ░░░ SCANLINE / GRID FX ░░░ -->
+<div class="bg-grid" aria-hidden="true"></div>
+
+<!-- ░░░ STATUS BAR ░░░ -->
+<header class="statusbar" role="banner">
+  <div class="sb-left">
+    <span class="dot"></span>
+    <span class="mono">opsec-os</span>
+    <span class="sb-sep">/</span>
+    <span class="mono muted">session: secure</span>
+  </div>
+  <nav class="sb-nav" aria-label="Primary">
+    <a href="#identity">whoami</a>
+    <a href="#operations">ops</a>
+    <a href="#arsenal">arsenal</a>
+    <a href="#recognition">recon</a>
+    <a href="#interface">contact</a>
+  </nav>
+  <div class="sb-right">
+    <button id="cmd-open" class="kbd-btn" title="Open command palette">
+      <span class="mono">⌘K</span> <span class="hide-sm">command</span>
+    </button>
+    <span id="clock" class="mono muted"></span>
+  </div>
+</header>
+
+<main id="main" class="main">
+
+  <!-- ═══ LAYER 0 · KERNEL / IDENTITY ═══ -->
+  <section id="identity" class="hero">
+    <div class="hero-tag mono">// layer_0 · kernel</div>
+    <h1 class="hero-name">
+      <span class="ln">VIGNESH</span>
+      <span class="ln accent">CHANDRASEKARAN</span>
+    </h1>
+    <p class="hero-role mono">
+      <span class="prompt">$</span> Red&nbsp;Team&nbsp;Specialist
+      <span class="pipe">·</span> Offensive&nbsp;Security&nbsp;Engineer
+      <span class="pipe">·</span> vCISO&nbsp;Advisor
+      <span class="pipe">·</span> ICS/SCADA&nbsp;Security
+    </p>
+    <p class="hero-blurb">
+      Elite offensive security practitioner with <strong>12+ years</strong> spanning red team operations,
+      adversary simulation, nation-state-level threat intelligence and critical-infrastructure security —
+      across the Middle&nbsp;East, Europe and the United&nbsp;States. I translate offensive findings into
+      <span class="redacted" tabindex="0" data-reveal="board-level business risk">[ classified ]</span>.
+    </p>
+    <div class="hero-stats">
+      <div class="stat"><b>12+</b><span>years offensive</span></div>
+      <div class="stat"><b>50+</b><span>VAPT engagements</span></div>
+      <div class="stat"><b>Top&nbsp;10</b><span>HTB Hall of Fame</span></div>
+      <div class="stat"><b>&lt;0.1%</b><span>Omniscient rank</span></div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#interface">Initiate contact →</a>
+      <a class="btn" href="/cv/Vignesh_Chandrasekaran_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      <button class="btn btn-ghost" id="cmd-open-2"><span class="mono">⌘K</span> explore</button>
+    </div>
+    <p class="hero-hint mono muted">tip: press <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>K</kbd> — or type <code>sudo hire</code></p>
+  </section>
+
+  <!-- ═══ WHY ENGAGE ═══ -->
+  <section id="why" class="why">
+    <p class="section-label mono"><span class="muted">//</span> why_engage <span class="muted">— the short version</span></p>
+    <div class="cards why-cards">
+      <div class="card static why-card">
+        <div class="why-no mono">01</div>
+        <div class="card-top">Proof, not promises</div>
+        <p>HackTheBox <strong>Omniscient — Top 10</strong> globally (&lt;0.1% of users). Bug Bounty Hall of Fame at <strong>Google, Twitter, Bugcrowd</strong>. Every claim here is independently verifiable.</p>
+      </div>
+      <div class="card static why-card">
+        <div class="why-no mono">02</div>
+        <div class="card-top">A rare full-spectrum range</div>
+        <p>Attacker depth — red team, exploit dev, AD attack chains — <em>plus</em> <strong>ICS/SCADA (OT)</strong>, <strong>LLM/AI security</strong> and <strong>vCISO</strong> advisory. Few operators cover the wire <em>and</em> the boardroom.</p>
+      </div>
+      <div class="card static why-card">
+        <div class="why-no mono">03</div>
+        <div class="card-top">Trusted with the sensitive work</div>
+        <p><strong>12+ years</strong> across government-adjacent and critical-infrastructure engagements where discretion is the requirement, not a preference.</p>
+      </div>
+      <div class="card static why-card">
+        <div class="why-no mono">04</div>
+        <div class="card-top">I ship, not just report</div>
+        <p>Open-source tooling with real traction (177★) and findings translated into <strong>CFO / board-level financial risk</strong> — outcomes, not a PDF that gathers dust.</p>
+      </div>
+    </div>
+    <p class="why-line mono">
+      <span class="prompt">$</span> echo "you're not hiring a scanner — you're hiring an adversary who can sit in your boardroom."
+    </p>
+  </section>
+
+  <!-- ═══ THE STACK ═══ -->
+  <p class="section-label mono"><span class="muted">//</span> stack — click a layer to expand</p>
+
+  <!-- ═══ LAYER 1 · OPERATIONS / EXPERIENCE ═══ -->
+  <section id="operations" class="layer" data-open="true">
+    <button class="layer-head" aria-expanded="true">
+      <span class="layer-id mono">layer_1</span>
+      <span class="layer-title">Operations · Career</span>
+      <span class="layer-meta mono muted">2014 → present</span>
+      <span class="chev">▸</span>
+    </button>
+    <div class="layer-body">
+      <ol class="timeline">
+        <li>
+          <div class="tl-when mono">2023 — present</div>
+          <h3>Independent Security Consultant &amp; Red Team Advisor</h3>
+          <div class="tl-org">Self-Employed · Remote, Global</div>
+          <ul>
+            <li>Offensive advisory, adversary simulation and vCISO-level guidance across high-sensitivity engagements <span class="muted">(clients confidential by agreement)</span>.</li>
+            <li>APT-focused operations: threat-actor emulation, C2 infrastructure design, post-compromise analysis.</li>
+            <li>Pioneered <strong>LLM / AI security research</strong> — prompt-injection vectors and adversarial misuse across model deployments.</li>
+            <li>Built <code>sabha-devsec</code>, <code>bheeshma</code>, and <code>chanakya-opsec</code> — open-source security tooling.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="tl-when mono">2022 — 2023</div>
+          <h3>Information Security Manager</h3>
+          <div class="tl-org">Saptang Labs · Chennai, India</div>
+          <ul>
+            <li>Led end-to-end security strategy: red team engagements, client assessments, internal SecOps.</li>
+            <li>Built structured red-team methodologies aligned to real-world adversary TTPs; led a team of analysts.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="tl-when mono">2021 — 2022</div>
+          <h3>Senior Security Engineer</h3>
+          <div class="tl-org">Freshworks · Chennai, India</div>
+          <ul>
+            <li>AppSec assessments, network pentesting and security architecture reviews across enterprise SaaS.</li>
+            <li>Advised senior leadership on threat landscape, privacy risk and posture roadmaps.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="tl-when mono">2020 — 2021</div>
+          <h3>Senior Security Advisor <span class="badge">confidential</span></h3>
+          <div class="tl-org">Government-Adjacent Clients · Remote</div>
+          <ul>
+            <li><span class="redacted" tabindex="0" data-reveal="Nation-state-level offensive &amp; defensive operations across critical infrastructure.">[ ████████ disclosure restricted ████████ ]</span></li>
+            <li>APT simulation, threat-actor emulation, adversary-in-the-middle operations.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="tl-when mono">2019 — 2020</div>
+          <h3>Chief Hacking Officer</h3>
+          <div class="tl-org">Precise Thinking TCT · Amman, Jordan</div>
+          <ul>
+            <li>Led offensive security &amp; pentest programs across enterprise and government clients; owned budget and IR planning.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="tl-when mono">2014 — 2019</div>
+          <h3>Information Security Engineer — Global Consulting</h3>
+          <div class="tl-org">Independent / Freelance · Global</div>
+          <ul>
+            <li><strong>50+ VAPT engagements</strong> across the Middle East, Europe and the USA.</li>
+            <li>Central Bank of Jordan · RAK EGA (UAE Gov) · AL Rostamani Exchange (Dubai) · Municipal Gov (USA) · Critical-infrastructure SCADA (Pacific NW, USA).</li>
+            <li>Validator &amp; challenge author on HackTheBox, Bugcrowd and Yogosha. PCI-DSS QSA audits.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══ LAYER 2 · ARSENAL / TOOLING ═══ -->
+  <section id="arsenal" class="layer">
+    <button class="layer-head" aria-expanded="false">
+      <span class="layer-id mono">layer_2</span>
+      <span class="layer-title">Arsenal · Open-source tooling</span>
+      <span class="layer-meta mono muted">ls ~/tools</span>
+      <span class="chev">▸</span>
+    </button>
+    <div class="layer-body">
+      <div class="cards">
+        <a class="card" href="https://github.com/bb1nfosec" target="_blank" rel="noopener">
+          <div class="card-top mono"><span class="muted">repo/</span>Information-Security-Tasks</div>
+          <p>Curated, battle-tested offensive-security task library. Community-validated traction.</p>
+          <div class="card-foot mono">★ 177 · ⑂ 57</div>
+        </a>
+        <a class="card" href="https://github.com/bb1nfosec" target="_blank" rel="noopener">
+          <div class="card-top mono"><span class="muted">repo/</span>bheeshma</div>
+          <p>Runtime dependency-behavior monitor detecting <strong>software supply-chain abuse</strong> in Node.js.</p>
+          <div class="card-foot mono">node.js · supply-chain</div>
+        </a>
+        <a class="card" href="https://github.com/bb1nfosec" target="_blank" rel="noopener">
+          <div class="card-top mono"><span class="muted">repo/</span>sabha-devsec</div>
+          <p>Translates offensive findings into <strong>CFO-level financial impact</strong> for executive decisions.</p>
+          <div class="card-foot mono">risk · vCISO</div>
+        </a>
+        <a class="card" href="https://github.com/bb1nfosec" target="_blank" rel="noopener">
+          <div class="card-top mono"><span class="muted">repo/</span>chanakya-opsec</div>
+          <p>Multi-layer OPSEC failure-analysis framework for research-grade threat modeling &amp; signal correlation.</p>
+          <div class="card-foot mono">opsec · threat-model</div>
+        </a>
+      </div>
+
+      <h4 class="sub mono">// core_competencies</h4>
+      <div class="chips">
+        <span>Red Team Ops</span><span>Adversary Simulation</span><span>VAPT — Net/Web/Mobile/Cloud</span>
+        <span>Exploit Development</span><span>Active Directory Attack Chains</span><span>Purple Teaming</span>
+        <span>APT Investigation</span><span>Threat Intelligence</span><span>OSINT</span><span>Incident Response</span>
+        <span>Malware Analysis</span><span class="hot">ICS / SCADA (OT)</span><span class="hot">LLM / AI Security</span>
+        <span>Supply-Chain Security</span><span>Mobile (Android/iOS)</span><span>PCI-DSS QSA</span>
+        <span>Hybrid Cloud Security</span><span>vCISO Advisory</span><span>Security Architecture</span>
+      </div>
+
+      <h4 class="sub mono">// languages</h4>
+      <div class="chips mono">
+        <span>Python</span><span>.NET</span><span>JavaScript / Node.js</span><span>Bash / Shell</span><span>Language-agnostic tooling</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LAYER 3 · RECOGNITION ═══ -->
+  <section id="recognition" class="layer">
+    <button class="layer-head" aria-expanded="false">
+      <span class="layer-id mono">layer_3</span>
+      <span class="layer-title">Recognition · Proof of work</span>
+      <span class="layer-meta mono muted">verify ↗</span>
+      <span class="chev">▸</span>
+    </button>
+    <div class="layer-body">
+      <div class="cards">
+        <div class="card static">
+          <div class="card-top">🏆 HackTheBox — Omniscient</div>
+          <p>Global <strong>Top 10 Hall of Fame</strong> — a rank held by fewer than <strong>0.1%</strong> of the platform worldwide.</p>
+        </div>
+        <div class="card static">
+          <div class="card-top">🎯 Bug Bounty Hall of Fame</div>
+          <p>Google, Twitter, Bugcrowd, Medium — <strong>15+</strong> vulnerability reports to Google Bug Hunters.</p>
+        </div>
+        <a class="card" href="https://www.youtube.com/watch?v=9OU8LiNyTAs" target="_blank" rel="noopener">
+          <div class="card-top">🎤 THREAT CON 2019</div>
+          <p>"Hacking Human Lives via Body Area Network." International conference speaker.</p>
+          <div class="card-foot mono">watch ↗</div>
+        </a>
+        <a class="card" href="https://www.youtube.com/watch?v=uMeKogRyOPQ" target="_blank" rel="noopener">
+          <div class="card-top">🎤 BalCCon 2k18</div>
+          <p>"Hybrid Cloud Seeding &amp; Infrastructure Attack Chains."</p>
+          <div class="card-foot mono">watch ↗</div>
+        </a>
+        <div class="card static">
+          <div class="card-top">🎓 SANS SEC760 — Instructor</div>
+          <p>Trained professionals who went on to become SANS instructors themselves.</p>
+        </div>
+        <div class="card static">
+          <div class="card-top">🌍 50+ VAPT Engagements</div>
+          <p>Global client portfolio across the Middle East, Europe, USA and Asia.</p>
+        </div>
+      </div>
+
+      <h4 class="sub mono">// certifications</h4>
+      <div class="chips">
+        <span>ISA/IEC 62443 — ICS/SCADA Security</span>
+        <span>ISA/IEC 62443 — Cybersecurity Risk Assessment</span>
+        <span>ECSA — EC-Council Security Analyst</span>
+        <span>CCNA — Cisco</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LAYER 4 · RESEARCH / COMMUNITY ═══ -->
+  <section id="research" class="layer">
+    <button class="layer-head" aria-expanded="false">
+      <span class="layer-id mono">layer_4</span>
+      <span class="layer-title">Research · Signal</span>
+      <span class="layer-meta mono muted">cat ~/writing</span>
+      <span class="chev">▸</span>
+    </button>
+    <div class="layer-body">
+      <div class="cards">
+        <a class="card" href="https://medium.com/@vignesh4303" target="_blank" rel="noopener">
+          <div class="card-top">✍ Medium — Security Blog</div>
+          <p>Security research articles and practitioner guides.</p>
+          <div class="card-foot mono">@vignesh4303 ↗</div>
+        </a>
+        <a class="card" href="https://www.linkedin.com/in/bb1nfosec" target="_blank" rel="noopener">
+          <div class="card-top">in/ LinkedIn</div>
+          <p>4,400+ followers — an active voice in offensive security &amp; threat research.</p>
+          <div class="card-foot mono">connect ↗</div>
+        </a>
+        <div class="card static">
+          <div class="card-top">⌬ Stack Exchange</div>
+          <p>Active contributor across the information-security community.</p>
+        </div>
+        <div class="card static">
+          <div class="card-top">🧪 Active research</div>
+          <p>LLM/AI red-teaming, runtime supply-chain abuse, OPSEC failure correlation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LAYER 5 · INTERFACE / CONTACT ═══ -->
+  <section id="interface" class="layer contact">
+    <button class="layer-head" aria-expanded="false">
+      <span class="layer-id mono">layer_5</span>
+      <span class="layer-title">Interface · Establish contact</span>
+      <span class="layer-meta mono muted">open to remote-global</span>
+      <span class="chev">▸</span>
+    </button>
+    <div class="layer-body">
+      <div class="contact-grid">
+        <a class="ct" href="mailto:vignesh4303@gmail.com">
+          <span class="mono muted">email</span><b>vignesh4303@gmail.com</b>
+        </a>
+        <a class="ct" href="tel:+919524983154">
+          <span class="mono muted">phone</span><b>+91 952 498 3154</b>
+        </a>
+        <a class="ct" href="https://github.com/bb1nfosec" target="_blank" rel="noopener">
+          <span class="mono muted">github</span><b>github.com/bb1nfosec</b>
+        </a>
+        <a class="ct" href="https://www.linkedin.com/in/bb1nfosec" target="_blank" rel="noopener">
+          <span class="mono muted">linkedin</span><b>in/bb1nfosec</b>
+        </a>
+        <a class="ct" href="https://twitter.com/bb1nfosec" target="_blank" rel="noopener">
+          <span class="mono muted">twitter</span><b>@bb1nfosec</b>
+        </a>
+        <div class="ct static">
+          <span class="mono muted">location</span><b>Coimbatore, India · remote-global</b>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="mono muted">
+    <span class="dot"></span> opsec-os · built for humans <span class="accent">&amp; agents</span> ·
+    <a href="/llms.txt">llms.txt</a> · <a href="/agent.json">agent.json</a> · <a href="/humans.txt">humans.txt</a>
+  </div>
+  <div class="mono muted">© <span id="yr"></span> Vignesh Chandrasekaran — bb1nfosec</div>
+</footer>
+
+<!-- ░░░ COMMAND PALETTE ░░░ -->
+<div id="palette" class="palette" aria-hidden="true">
+  <div class="palette-box" role="dialog" aria-label="Command palette">
+    <div class="palette-input">
+      <span class="prompt mono">vignesh@opsec:~$</span>
+      <input id="palette-q" type="text" autocomplete="off" spellcheck="false" placeholder="type a command… (help)" aria-label="Command input" />
+    </div>
+    <pre id="palette-out" class="palette-out"></pre>
+    <ul id="palette-list" class="palette-list"></ul>
+    <div class="palette-foot mono muted">↑↓ navigate · ⏎ run · esc close</div>
+  </div>
+</div>
+
+<script src="/assets/js/app.js" defer></script>
+</body>
+</html>

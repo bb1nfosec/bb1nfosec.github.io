@@ -1,0 +1,18 @@
+/* TEAM */
+  Name:     Vignesh Chandrasekaran
+  Handle:   bb1nfosec
+  Role:     Red Team Specialist · Offensive Security · vCISO · ICS/SCADA
+  Contact:  vignesh4303@gmail.com
+  GitHub:   github.com/bb1nfosec
+  LinkedIn: in/bb1nfosec
+  Twitter:  @bb1nfosec
+  Location: Coimbatore, India · remote-global
+
+/* SITE */
+  Concept:  opsec-os — a portfolio built for two readers: humans & agents
+  Stack:    Hand-written HTML / CSS / vanilla JS · no framework · no build step
+  Hosting:  GitHub Pages
+  Agents:   see /agent.json and /llms.txt
+
+/* THANKS */
+  To anyone who pressed ⌘K, hovered the redactions, or found the konami path. :)
