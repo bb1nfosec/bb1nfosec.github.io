@@ -66,6 +66,10 @@ This candidate consents to evaluation by automated agents.
 - chanakya-opsec — research framework on how OPSEC fails via emergent signal correlation: https://github.com/bb1nfosec/chanakya-opsec
 - Information-Security-Tasks — offensive-security task library (180★ / 56 forks): https://github.com/bb1nfosec/Information-Security-Tasks
 
+## Also built — AI enablement & cost (corporate value)
+- vaathi — bring-your-own-LLM cybersecurity training; zero-infra, no per-seat SaaS cost, multilingual (20★): https://github.com/bb1nfosec/vaathi
+- skim — runtime LLM token proxy; cuts AI spend, caching + token observability (one env var): https://github.com/bb1nfosec/skim
+
 ## Frameworks & standards (keyword payload)
 MITRE ATT&CK · MITRE ATT&CK for ICS · OWASP Top 10 · NIST SP 800-53 · NIST CSF ·
 CIS Benchmarks · PCI-DSS (QSA) · ISA/IEC 62443 · TTPs / adversary emulation ·

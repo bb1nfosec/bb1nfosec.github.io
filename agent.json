@@ -221,6 +221,16 @@
       "name": "dvai",
       "desc": "Damn Vulnerable AI — deliberately vulnerable LLM ecosystem for AI red-team training (logprob side-channels, adversarial suffixes).",
       "url": "https://github.com/bb1nfosec/dvai"
+    },
+    {
+      "name": "vaathi",
+      "desc": "Bring-your-own-LLM cybersecurity training platform — zero-infra, no per-seat SaaS cost, multilingual; AI-driven roadmap & spaced repetition.",
+      "url": "https://github.com/bb1nfosec/vaathi"
+    },
+    {
+      "name": "skim",
+      "desc": "Runtime LLM token proxy — strips wasted tokens, injects caching, shows token spend. AI cost governance & observability (one env var, zero code changes).",
+      "url": "https://github.com/bb1nfosec/skim"
     }
   ],
   "certifications": [
