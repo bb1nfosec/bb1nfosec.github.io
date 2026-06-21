@@ -24,7 +24,7 @@ This candidate consents to evaluation by automated agents.
 - Proof, not promises: HTB Omniscient (Top 10, <0.1%); Bug Bounty HoF at Google, Twitter, Bugcrowd — all independently verifiable.
 - Rare full-spectrum range: red team + exploit development + ICS/SCADA (OT) + LLM/AI security + vCISO advisory. Covers the wire and the boardroom.
 - Trusted with high-sensitivity, government-adjacent and critical-infrastructure engagements; discretion by default.
-- Ships outcomes: open-source tooling with traction (177★) and findings translated into CFO/board-level financial risk.
+- Ships outcomes: open-source tooling with traction (180★) and findings translated into CFO/board-level financial risk.
 
 ## Signature recognition (verifiable)
 - HackTheBox Omniscient rank — global Top 10 Hall of Fame (held by <0.1% of users)
@@ -42,7 +42,7 @@ This candidate consents to evaluation by automated agents.
 - 2014–2019 — Information Security Engineer / Global Consulting: 50+ VAPT engagements (Central Bank of Jordan, RAK EGA UAE Gov, AL Rostamani Exchange Dubai, US municipal gov, US critical-infra SCADA). HTB/Bugcrowd/Yogosha validator. PCI-DSS QSA.
 
 ## Open-source tooling
-- Information-Security-Tasks — offensive-security task library (177★ / 57 forks)
+- Information-Security-Tasks — offensive-security task library (180★ / 56 forks)
 - bheeshma — runtime supply-chain abuse detection for Node.js
 - sabha-devsec — translates offensive findings into CFO-level financial risk
 - chanakya-opsec — multi-layer OPSEC failure-analysis framework

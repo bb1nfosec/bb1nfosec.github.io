@@ -207,11 +207,9 @@ html.js .reveal.in{opacity:1;transform:none}
 .layer-meta{font-size:12px;white-space:nowrap}
 .chev{color:var(--teal);font-size:14px;transition:transform .25s;flex-shrink:0}
 .layer[data-open="true"] .chev{transform:rotate(90deg)}
-.layer-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
-.layer[data-open="true"] .layer-body{grid-template-rows:1fr}
-.layer-body>*{overflow:hidden}
-.layer-body>div,.layer-body>ol{padding:0 clamp(16px,3vw,26px) 26px}
-.layer[data-open="true"] .layer-body>div,.layer[data-open="true"] .layer-body>ol{padding-top:4px}
+.layer-body{overflow:hidden;max-height:0;padding:0 clamp(16px,3vw,26px);
+  transition:max-height .4s ease,padding .4s ease}
+.layer[data-open="true"] .layer-body{max-height:3600px;padding-top:6px;padding-bottom:26px}
 
 /* ═══ TIMELINE ═══ */
 .timeline{list-style:none}

@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{background:#0E1116;color:#E6EDF3;font-family:'IBM Plex Mono',monospace;position:relative}
+  .grid{position:absolute;inset:0;
+    background:radial-gradient(1100px 600px at 85% -20%,rgba(45,212,191,.16),transparent 60%),
+      linear-gradient(rgba(40,48,57,.30) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(40,48,57,.30) 1px,transparent 1px);
+    background-size:auto,48px 48px,48px 48px}
+  .scan{position:absolute;left:0;right:0;top:96px;height:2px;background:linear-gradient(90deg,transparent,#2DD4BF,transparent);opacity:.5}
+  .wrap{position:absolute;inset:0;padding:74px 80px;display:flex;flex-direction:column;justify-content:space-between}
+  .top{display:flex;align-items:center;gap:12px;font-size:18px;color:#8B98A5}
+  .dot{width:11px;height:11px;border-radius:50%;background:#2DD4BF;box-shadow:0 0 14px #2DD4BF}
+  .tag{font-size:18px;color:#2DD4BF;letter-spacing:2px;margin-bottom:14px}
+  .name{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:96px;line-height:.92;text-transform:uppercase;letter-spacing:-1px}
+  .name .a{color:transparent;background:linear-gradient(120deg,#2DD4BF,#6ee7d8 55%,#7C9CF0);-webkit-background-clip:text;background-clip:text}
+  .role{margin-top:26px;font-size:26px;color:#c9d4de}
+  .role b{color:#2DD4BF;font-weight:500}
+  .stats{display:flex;gap:46px;margin-top:8px}
+  .stats div{font-size:20px;color:#8B98A5}
+  .stats b{display:block;font-family:'Chakra Petch',sans-serif;font-size:34px;color:#fff;font-weight:600}
+  .foot{display:flex;justify-content:space-between;align-items:flex-end;font-size:20px;color:#8B98A5}
+  .foot .u{color:#2DD4BF}
+</style></head>
+<body>
+  <div class="grid"></div><div class="scan"></div>
+  <div class="wrap">
+    <div class="top"><span class="dot"></span>opsec-os&nbsp;&nbsp;/&nbsp;&nbsp;session: secure</div>
+    <div>
+      <div class="tag">// red team · offensive security · vCISO</div>
+      <div class="name">VIGNESH<br><span class="a">CHANDRASEKARAN</span></div>
+      <div class="role">12+ yrs offensive · <b>HTB Omniscient · Top&nbsp;10</b> · Bug Bounty HoF</div>
+    </div>
+    <div class="stats">
+      <div><b>50+</b>VAPT engagements</div>
+      <div><b>&lt;0.1%</b>Omniscient rank</div>
+      <div><b>180★</b>open-source</div>
+      <div><b>4</b>continents</div>
+    </div>
+    <div class="foot"><span class="u">bb1nfosec.github.io</span><span>built for humans &amp; agents</span></div>
+  </div>
+</body></html>
