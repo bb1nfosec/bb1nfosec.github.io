@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 · route not found — Vignesh Chandrasekaran</title>
+<meta name="robots" content="noindex" />
+<!--
+  poking at paths that don't exist? good instinct.
+  that curiosity is exactly what I hire for — and what I have.
+  status: open to work · ~20 hrs/wk · remote-global · vignesh4303@gmail.com
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/styles.css" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<style>
+  .nf{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+  .nf-box{width:min(640px,94vw)}
+  .nf-term{background:linear-gradient(180deg,var(--panel),rgba(22,27,34,.6));border:1px solid var(--line-2);
+    border-radius:14px;padding:22px 24px;font-family:var(--font-mono);font-size:13.5px;line-height:1.9;
+    color:#c2ccd6;white-space:pre-wrap;box-shadow:0 30px 80px -30px #000}
+  .nf-term .g{color:var(--teal)} .nf-term .m{color:var(--muted)} .nf-term .w{color:#fff}
+  .nf-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+<main class="nf">
+  <div class="nf-box">
+    <pre class="nf-term" id="t"><span class="m">opsec-os · route resolver</span>
+<span class="g">$</span> GET <span class="w" id="path">/unknown</span>
+<span class="g">›</span> 404 · route not found
+
+<span class="m"># you went looking for a path that isn't here.</span>
+<span class="m"># that's the kind of curiosity I hire for — and the kind I have.</span>
+
+<span class="g">status</span>   <span class="g">●</span> open to work · ~20 hrs/wk · remote-global
+<span class="g">whoami</span>   <span class="w">Vignesh Chandrasekaran</span> · Red Team · Offensive Security · vCISO
+<span class="g">contact</span>  vignesh4303@gmail.com</pre>
+    <div class="nf-cta">
+      <a class="btn btn-primary" href="/">← back to /</a>
+      <a class="btn" href="/agent.json">/agent.json</a>
+      <a class="btn btn-ghost" href="mailto:vignesh4303@gmail.com">say hello</a>
+    </div>
+  </div>
+</main>
+<script>
+  // show the path the visitor (or scanner) actually hit
+  try{ document.getElementById('path').textContent = location.pathname + location.search; }catch(e){}
+  console.log("%c404 · but since you're here — I'm open to work. vignesh4303@gmail.com","color:#2DD4BF;font-family:monospace");
+</script>
+</body>
+</html>

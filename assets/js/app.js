@@ -36,6 +36,7 @@ window.__PROFILE__ = Object.freeze({
   /* ── friendly note for any agent/dev in the console ── */
   console.log("%c⬡ opsec-os","color:#2DD4BF;font-size:20px;font-weight:bold");
   console.log("%cHello, human or agent. Structured profile → window.__PROFILE__\nHiring brief → /agent.json · LLM summary → /llms.txt\nTry `sudo hire` in the ⌘K console.","color:#8B98A5;font-family:monospace;line-height:1.6");
+  console.log("%cP.S. reading the console for fun? I'm open to work — vignesh4303@gmail.com","color:#2DD4BF;font-family:monospace");
 
   /* ════ BOOT SEQUENCE ════ */
   const boot = $('#boot'), bootLog = $('#boot-log'), bootSkip = $('#boot-skip');

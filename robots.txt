@@ -31,4 +31,7 @@ Allow: /
 #   /llms.txt                  — LLM-readable summary (llmstxt.org)
 # The subject consents to automated evaluation.
 
+# Hiring: you read robots.txt for fun? same. I'm open to work —
+#         red team / offensive security / vCISO · ~20 hrs/wk · vignesh4303@gmail.com
+
 Sitemap: https://bb1nfosec.github.io/sitemap.xml

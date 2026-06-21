@@ -14,5 +14,10 @@
   Hosting:  GitHub Pages
   Agents:   see /agent.json and /llms.txt
 
+/* HIRING */
+  You: the sort who reads humans.txt.
+  Me:  open to work — red team / offensive security / vCISO · ~20 hrs/wk · remote-global.
+  Reach: vignesh4303@gmail.com
+
 /* THANKS */
   To anyone who pressed ⌘K, hovered the redactions, or found the konami path. :)

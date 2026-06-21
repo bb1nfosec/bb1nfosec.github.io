@@ -5,3 +5,4 @@ Contact: https://github.com/bb1nfosec
 Preferred-Languages: en
 Canonical: https://bb1nfosec.github.io/.well-known/security.txt
 Expires: 2027-06-21T00:00:00.000Z
+# Hiring: if you found this file, you're my kind of person — open to work (red team / offensive security / vCISO).
