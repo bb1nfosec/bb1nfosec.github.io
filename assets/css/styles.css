@@ -46,6 +46,20 @@ code{font-family:var(--font-mono);font-size:.86em;color:var(--teal);background:r
 kbd{font-family:var(--font-mono);font-size:.8em;background:var(--panel-2);border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:.05em .45em;color:var(--text)}
 ::selection{background:var(--teal-glow);color:#fff}
 
+/* ── visible keyboard focus (was relying on browser default) ── */
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:6px}
+a:focus-visible,.btn:focus-visible,.kbd-btn:focus-visible,.boot-skip:focus-visible,
+.card:focus-visible,.cs:focus-visible,.vf:focus-visible,.ct:focus-visible,
+.cred:focus-visible,.layer-head:focus-visible,.sb-nav a:focus-visible{
+  outline:2px solid var(--teal);outline-offset:3px}
+
+/* ── skip to content (keyboard / screen-reader) ── */
+.skip{position:fixed;top:10px;left:10px;z-index:1001;transform:translateY(-160%);
+  background:var(--panel);border:1px solid var(--teal);color:var(--teal);
+  font-family:var(--font-mono);font-size:13px;padding:9px 14px;border-radius:8px;
+  transition:transform .18s}
+.skip:focus{transform:none;outline:none}
+
 /* ── background grid + glow ── */
 .bg-grid{
   position:fixed;inset:0;z-index:-2;pointer-events:none;
@@ -100,8 +114,9 @@ kbd{font-family:var(--font-mono);font-size:.8em;background:var(--panel-2);border
 .sb-nav{display:flex;gap:20px}
 .sb-nav a{color:var(--muted);font-family:var(--font-mono);font-size:12.5px;position:relative}
 .sb-nav a:hover{color:var(--text)}
+.sb-nav a.active{color:var(--teal)}
 .sb-nav a::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:1px;background:var(--teal);transition:width .2s}
-.sb-nav a:hover::after{width:100%}
+.sb-nav a:hover::after,.sb-nav a.active::after{width:100%}
 .sb-right{display:flex;align-items:center;gap:14px}
 .kbd-btn{
   display:flex;align-items:center;gap:7px;background:var(--panel);
@@ -263,7 +278,10 @@ html.js .reveal.in{opacity:1;transform:none}
 .layer[data-open="true"] .chev{transform:rotate(90deg)}
 .layer-body{overflow:hidden;max-height:0;padding:0 clamp(16px,3vw,26px);
   transition:max-height .4s ease,padding .4s ease}
-.layer[data-open="true"] .layer-body{max-height:3600px;padding-top:6px;padding-bottom:26px}
+.layer[data-open="true"] .layer-body{padding-top:6px;padding-bottom:26px}
+/* JS sets an explicit max-height (measured) so tall content never clips.
+   No-JS fallback: show everything rather than collapse to 0. */
+html:not(.js) .layer-body{max-height:none;padding-top:6px;padding-bottom:26px}
 
 /* ═══ TIMELINE ═══ */
 .timeline{list-style:none}
@@ -307,9 +325,11 @@ html.js .reveal.in{opacity:1;transform:none}
 .ct b{font-size:15px;color:#fff;font-weight:500}
 
 /* ═══ CONTACT FORM ═══ */
-.cform{margin-top:14px;display:flex;flex-direction:column;gap:10px;max-width:560px}
+.cform{margin-top:14px;display:flex;flex-direction:column;gap:12px;max-width:560px}
 .cf-row{display:flex;gap:10px;flex-wrap:wrap}
-.cf-row input{flex:1;min-width:180px}
+.cf-field{display:flex;flex-direction:column;gap:5px;flex:1;min-width:180px}
+.cf-label{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--teal)}
+.cf-label::before{content:"› "}
 .cform input,.cform textarea{background:var(--panel-2);border:1px solid var(--line);border-radius:9px;
   padding:11px 14px;color:var(--text);font-family:var(--font-body);font-size:14px;width:100%}
 .cform input::placeholder,.cform textarea::placeholder{color:var(--muted-2)}

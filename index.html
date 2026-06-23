@@ -107,6 +107,7 @@
 </head>
 
 <body>
+<a href="#main" class="skip mono">skip to content →</a>
 <!-- ░░░ BOOT OVERLAY ░░░ -->
 <div id="boot" class="boot" aria-hidden="true">
   <pre id="boot-log" class="boot-log"></pre>
@@ -455,31 +456,31 @@
     <div class="layer-body">
       <div class="cards">
         <a class="card" href="https://profile.hackthebox.com/profile/019e104d-013a-70ec-8ea0-b063263b76b8" target="_blank" rel="noopener">
-          <div class="card-top">🏆 HackTheBox — Omniscient</div>
+          <div class="card-top"><span aria-hidden="true">🏆</span> HackTheBox — Omniscient</div>
           <p>Global <strong>Top 10 Hall of Fame</strong> — a rank held by fewer than <strong>0.1%</strong> of the platform worldwide.</p>
           <div class="card-foot mono">verify profile ↗</div>
         </a>
         <a class="card" href="https://bughunters.google.com/profile/4416ffd4-8b45-46fd-a34b-d9b6182ee693" target="_blank" rel="noopener">
-          <div class="card-top">🎯 Bug Bounty Hall of Fame</div>
+          <div class="card-top"><span aria-hidden="true">🎯</span> Bug Bounty Hall of Fame</div>
           <p>Google, Twitter, Bugcrowd, Medium — <strong>15+</strong> vulnerability reports to Google Bug Hunters.</p>
           <div class="card-foot mono">verify on Google ↗</div>
         </a>
         <a class="card" href="https://www.youtube.com/watch?v=9OU8LiNyTAs" target="_blank" rel="noopener">
-          <div class="card-top">🎤 THREAT CON 2019</div>
+          <div class="card-top"><span aria-hidden="true">🎤</span> THREAT CON 2019</div>
           <p>"Hacking Human Lives via Body Area Network." International conference speaker.</p>
           <div class="card-foot mono">watch ↗</div>
         </a>
         <a class="card" href="https://www.youtube.com/watch?v=uMeKogRyOPQ" target="_blank" rel="noopener">
-          <div class="card-top">🎤 BalCCon 2k18</div>
+          <div class="card-top"><span aria-hidden="true">🎤</span> BalCCon 2k18</div>
           <p>"Hybrid Cloud Seeding — Hacking Microsoft Hybrid Cloud Infrastructure."</p>
           <div class="card-foot mono">watch ↗</div>
         </a>
         <div class="card static">
-          <div class="card-top">🎓 SANS SEC760 — Instructor</div>
+          <div class="card-top"><span aria-hidden="true">🎓</span> SANS SEC760 — Instructor</div>
           <p>Trained professionals who went on to become SANS instructors themselves.</p>
         </div>
         <div class="card static">
-          <div class="card-top">🌍 50+ VAPT Engagements</div>
+          <div class="card-top"><span aria-hidden="true">🌍</span> 50+ VAPT Engagements</div>
           <p>Global client portfolio across the Middle East, Europe, USA and Asia.</p>
         </div>
       </div>
@@ -505,7 +506,7 @@
     <div class="layer-body">
       <div class="cards">
         <a class="card" href="https://bbinfosec.medium.com/" target="_blank" rel="noopener">
-          <div class="card-top">✍ Medium — Security Blog</div>
+          <div class="card-top"><span aria-hidden="true">✍</span> Medium — Security Blog</div>
           <p>Security research articles and practitioner guides.</p>
           <div class="card-foot mono">bbinfosec ↗</div>
         </a>
@@ -515,11 +516,11 @@
           <div class="card-foot mono">connect ↗</div>
         </a>
         <div class="card static">
-          <div class="card-top">⌬ Stack Exchange</div>
+          <div class="card-top"><span aria-hidden="true">⌬</span> Stack Exchange</div>
           <p>Active contributor across the information-security community.</p>
         </div>
         <div class="card static">
-          <div class="card-top">🧪 Active research</div>
+          <div class="card-top"><span aria-hidden="true">🧪</span> Active research</div>
           <p>LLM/AI red-teaming, runtime supply-chain abuse, OPSEC failure correlation.</p>
         </div>
       </div>
@@ -581,12 +582,21 @@
       <h4 class="sub mono">// or drop a message</h4>
       <form id="contact-form" class="cform" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div class="cf-row">
-          <input type="text" name="name" placeholder="your name" required aria-label="Your name" />
-          <input type="email" name="email" placeholder="your email" required aria-label="Your email" />
+          <div class="cf-field">
+            <label class="cf-label mono" for="cf-name">name</label>
+            <input id="cf-name" type="text" name="name" autocomplete="name" placeholder="your name" required />
+          </div>
+          <div class="cf-field">
+            <label class="cf-label mono" for="cf-email">email</label>
+            <input id="cf-email" type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@domain" required />
+          </div>
         </div>
         <input type="hidden" name="_subject" value="opsec-os — inbound from portfolio" />
         <input type="text" name="_gotcha" class="cf-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <textarea name="message" rows="4" placeholder="engagement type, scope sensitivity, timeline…" required aria-label="Message"></textarea>
+        <div class="cf-field">
+          <label class="cf-label mono" for="cf-msg">message</label>
+          <textarea id="cf-msg" name="message" rows="4" placeholder="engagement type, scope sensitivity, timeline…" required></textarea>
+        </div>
         <button type="submit" class="btn btn-primary cf-submit">Send message →</button>
         <p class="cf-status mono" role="status" aria-live="polite"></p>
       </form>
@@ -653,7 +663,7 @@
 
 <!-- ░░░ COMMAND PALETTE ░░░ -->
 <div id="palette" class="palette" aria-hidden="true">
-  <div class="palette-box" role="dialog" aria-label="Command palette">
+  <div class="palette-box" role="dialog" aria-modal="true" aria-label="Command palette">
     <div class="palette-input">
       <span class="prompt mono">vignesh@opsec:~$</span>
       <input id="palette-q" type="text" autocomplete="off" spellcheck="false" placeholder="type a command… (help)" aria-label="Command input" />

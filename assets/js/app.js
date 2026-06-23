@@ -69,20 +69,42 @@ window.__PROFILE__ = Object.freeze({
   function tick(){ if(clock) clock.textContent = new Date().toLocaleTimeString('en-GB',{hour12:false}); }
   tick(); setInterval(tick,1000);
 
-  /* ════ LAYER EXPAND/COLLAPSE ════ */
+  /* ════ LAYER EXPAND/COLLAPSE ════
+     Measured max-height (no magic number → tall content never clips) +
+     `inert` on collapsed bodies so their links stay out of the tab order. */
+  function applyLayer(layer, open){
+    const body=$('.layer-body',layer), head=$('.layer-head',layer);
+    layer.setAttribute('data-open',String(open));
+    head && head.setAttribute('aria-expanded',String(open));
+    if(!body) return;
+    if(open){
+      body.removeAttribute('inert');
+      body.style.maxHeight = body.scrollHeight + 'px';
+      // once expanded, release the cap so nested reveals can grow freely
+      const release=ev=>{ if(ev.propertyName==='max-height' && layer.getAttribute('data-open')==='true'){ body.style.maxHeight='none'; } body.removeEventListener('transitionend',release); };
+      reduced ? (body.style.maxHeight='none') : body.addEventListener('transitionend',release);
+    } else {
+      body.style.maxHeight = body.scrollHeight + 'px';      // from 'none'/auto → fixed px
+      void body.offsetHeight;                                // force reflow
+      body.style.maxHeight = '0px';
+      body.setAttribute('inert','');
+    }
+  }
+  $$('.layer').forEach(layer=>applyLayer(layer, layer.getAttribute('data-open')==='true'));
   $$('.layer-head').forEach(head=>{
     head.addEventListener('click', ()=>{
-      const layer = head.closest('.layer');
-      const open = layer.getAttribute('data-open')==='true';
-      layer.setAttribute('data-open', String(!open));
-      head.setAttribute('aria-expanded', String(!open));
+      const layer=head.closest('.layer');
+      applyLayer(layer, layer.getAttribute('data-open')!=='true');
     });
   });
+  // keep open layers correctly sized on resize/orientation change
+  let rz; addEventListener('resize',()=>{ clearTimeout(rz); rz=setTimeout(()=>{
+    $$('.layer[data-open="true"] .layer-body').forEach(b=>{ b.style.maxHeight='none'; });
+  },150); });
   function openLayer(id){
     const layer = $(id); if(!layer) return;
-    if(layer.classList.contains('layer')){
-      layer.setAttribute('data-open','true');
-      const h=$('.layer-head',layer); if(h) h.setAttribute('aria-expanded','true');
+    if(layer.classList.contains('layer') && layer.getAttribute('data-open')!=='true'){
+      applyLayer(layer, true);
     }
     layer.scrollIntoView({behavior: reduced?'auto':'smooth', block:'start'});
   }
@@ -100,6 +122,22 @@ window.__PROFILE__ = Object.freeze({
   } else {
     $$('.reveal').forEach(el=>el.classList.add('in'));
   }
+
+  /* ════ SCROLLSPY — highlight the current section in the status bar ════ */
+  (function(){
+    const links=$$('.sb-nav a[href^="#"]');
+    if(!links.length || !('IntersectionObserver' in window)) return;
+    const map=new Map();
+    links.forEach(a=>{ const t=$(a.getAttribute('href')); if(t) map.set(t,a); });
+    let current=null;
+    const setActive=a=>{ if(a===current) return; links.forEach(l=>l.classList.remove('active')); a&&a.classList.add('active'); current=a; };
+    const spy=new IntersectionObserver(entries=>{
+      // pick the section whose top is nearest just below the status bar
+      const visible=[...map.keys()].filter(s=>{ const r=s.getBoundingClientRect(); return r.top<140 && r.bottom>140; });
+      if(visible.length) setActive(map.get(visible[visible.length-1]));
+    },{rootMargin:'-72px 0px -55% 0px', threshold:[0,.25,.5,1]});
+    map.forEach((a,s)=>spy.observe(s));
+  })();
 
   /* ════ REDACTION REVEAL — decrypt scramble (the signature interaction) ════ */
   const GLYPHS='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef0123456789#$%&/<>*+=';
@@ -180,8 +218,28 @@ structured: <a href="/agent.json">/agent.json</a> (for your parser)
     filtered = q ? COMMANDS.filter(c=>(c.cmd+' '+c.desc).toLowerCase().includes(q)) : COMMANDS.slice();
     active=0; renderList();
   }
-  function openPalette(){ palette.classList.add('open'); palette.setAttribute('aria-hidden','false'); pq.value=''; filter(); setTimeout(()=>pq.focus(),60); }
-  function closePalette(){ palette.classList.remove('open'); palette.setAttribute('aria-hidden','true'); }
+  let lastFocus=null;
+  const pbox=$('.palette-box',palette);
+  function openPalette(){
+    lastFocus=document.activeElement;
+    palette.classList.add('open'); palette.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+    pq.value=''; filter(); setTimeout(()=>pq.focus(),60);
+  }
+  function closePalette(){
+    palette.classList.remove('open'); palette.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+    if(lastFocus && lastFocus.focus){ lastFocus.focus(); lastFocus=null; }
+  }
+  // focus trap: keep Tab inside the dialog while it's open
+  pbox && pbox.addEventListener('keydown',e=>{
+    if(e.key!=='Tab') return;
+    const f=$$('a[href],button,input,[tabindex]:not([tabindex="-1"])',pbox).filter(el=>!el.disabled && el.offsetParent!==null);
+    if(!f.length) return;
+    const first=f[0], last=f[f.length-1];
+    if(e.shiftKey && document.activeElement===first){ e.preventDefault(); last.focus(); }
+    else if(!e.shiftKey && document.activeElement===last){ e.preventDefault(); first.focus(); }
+  });
 
   $('#cmd-open') && $('#cmd-open').addEventListener('click',openPalette);
   $('#cmd-open-2') && $('#cmd-open-2').addEventListener('click',openPalette);
