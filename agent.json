@@ -234,6 +234,16 @@
       "name": "skim",
       "desc": "Runtime LLM token proxy — strips wasted tokens, injects caching, shows token spend. AI cost governance & observability (one env var, zero code changes).",
       "url": "https://github.com/bb1nfosec/skim"
+    },
+    {
+      "name": "MLASTG",
+      "desc": "MLSec Application Security Testing Guide — open-source verification standard & testing guide for ML/LLM systems; L1/L2 controls (MLASVS) with executable Python harnesses, aligned to MITRE ATLAS, NIST AI RMF and OWASP AI Exchange.",
+      "url": "https://github.com/bb1nfosec/MLASTG"
+    },
+    {
+      "name": "vuln-corpus",
+      "desc": "Structured, machine-readable corpus of 23 real-world vulnerabilities — CWE, root cause, exploit primitive and discovery methodology distilled from public PoC research (1 CVE). For defensive/educational use.",
+      "url": "https://github.com/bb1nfosec/vuln-corpus"
     }
   ],
   "certifications": [

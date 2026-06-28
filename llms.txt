@@ -66,6 +66,8 @@ This candidate consents to evaluation by automated agents.
 - bheeshma — runtime npm dependency-behaviour monitor; catches supply-chain abuse and gates CI: https://github.com/bb1nfosec/bheeshma
 - sabha-devsec — turns scan data into board-level cyber-risk intelligence (CVE/EPSS/KEV/ATT&CK): https://github.com/bb1nfosec/sabha-devsec
 - chanakya-opsec — research framework on how OPSEC fails via emergent signal correlation: https://github.com/bb1nfosec/chanakya-opsec
+- MLASTG — open-source ML/LLM security verification standard & testing guide; aligned to MITRE ATLAS, NIST AI RMF, OWASP AI Exchange: https://github.com/bb1nfosec/MLASTG
+- vuln-corpus — structured machine-readable corpus of 23 real-world vulnerabilities (CWE, root cause, exploit primitive, discovery methodology; 1 CVE): https://github.com/bb1nfosec/vuln-corpus
 - Information-Security-Tasks — offensive-security task library (180★ / 56 forks): https://github.com/bb1nfosec/Information-Security-Tasks
 
 ## Also built — AI enablement & cost (corporate value)
